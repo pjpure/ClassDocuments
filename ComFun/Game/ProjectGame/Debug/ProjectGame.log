@@ -1,0 +1,199 @@
+﻿  main.cpp
+C:\Users\PURE\source\repos\Game\ProjectGame\main.cpp(21,10): warning C4244:  '=': conversion from 'double' to 'int', possible loss of data
+C:\Users\PURE\source\repos\Game\ProjectGame\main.cpp(99,38): warning C4244:  'argument': conversion from 'int' to 'T', possible loss of data
+C:\Users\PURE\source\repos\Game\ProjectGame\main.cpp(99,38): warning C4244:         with
+C:\Users\PURE\source\repos\Game\ProjectGame\main.cpp(99,38): warning C4244:         [
+C:\Users\PURE\source\repos\Game\ProjectGame\main.cpp(99,38): warning C4244:             T=float
+C:\Users\PURE\source\repos\Game\ProjectGame\main.cpp(99,38): warning C4244:         ]
+C:\Users\PURE\source\repos\Game\ProjectGame\main.cpp(99,31): warning C4244:  'argument': conversion from 'int' to 'T', possible loss of data
+C:\Users\PURE\source\repos\Game\ProjectGame\main.cpp(99,31): warning C4244:         with
+C:\Users\PURE\source\repos\Game\ProjectGame\main.cpp(99,31): warning C4244:         [
+C:\Users\PURE\source\repos\Game\ProjectGame\main.cpp(99,31): warning C4244:             T=float
+C:\Users\PURE\source\repos\Game\ProjectGame\main.cpp(99,31): warning C4244:         ]
+C:\Users\PURE\source\repos\Game\ProjectGame\main.cpp(101,29): warning C4244:  'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\PURE\source\repos\Game\ProjectGame\main.cpp(101,20): warning C4244:  'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\PURE\source\repos\Game\ProjectGame\main.cpp(116,12): warning C4244:  'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+C:\Users\PURE\source\repos\Game\ProjectGame\main.cpp(274,57): warning C4244:  'argument': conversion from 'int' to 'T', possible loss of data
+C:\Users\PURE\source\repos\Game\ProjectGame\main.cpp(274,57): warning C4244:         with
+C:\Users\PURE\source\repos\Game\ProjectGame\main.cpp(274,57): warning C4244:         [
+C:\Users\PURE\source\repos\Game\ProjectGame\main.cpp(274,57): warning C4244:             T=float
+C:\Users\PURE\source\repos\Game\ProjectGame\main.cpp(274,57): warning C4244:         ]
+C:\Users\PURE\source\repos\Game\ProjectGame\main.cpp(279,58): warning C4244:  'argument': conversion from 'int' to 'T', possible loss of data
+C:\Users\PURE\source\repos\Game\ProjectGame\main.cpp(279,58): warning C4244:         with
+C:\Users\PURE\source\repos\Game\ProjectGame\main.cpp(279,58): warning C4244:         [
+C:\Users\PURE\source\repos\Game\ProjectGame\main.cpp(279,58): warning C4244:             T=float
+C:\Users\PURE\source\repos\Game\ProjectGame\main.cpp(279,58): warning C4244:         ]
+C:\Users\PURE\source\repos\Game\ProjectGame\main.cpp(587,19): warning C4244:  '=': conversion from 'int' to 'float', possible loss of data
+C:\Users\PURE\source\repos\Game\ProjectGame\main.cpp(612,18): warning C4244:  '=': conversion from 'int' to 'float', possible loss of data
+C:\Users\PURE\source\repos\Game\ProjectGame\main.cpp(624,21): warning C4244:  '=': conversion from 'float' to 'int', possible loss of data
+C:\Users\PURE\source\repos\Game\ProjectGame\main.cpp(625,22): warning C4244:  '=': conversion from 'float' to 'int', possible loss of data
+C:\Users\PURE\source\repos\Game\ProjectGame\main.cpp(748,27): warning C4244:  '=': conversion from 'float' to 'unsigned long', possible loss of data
+C:\Users\PURE\source\repos\Game\ProjectGame\main.cpp(773,44): warning C4244:  '=': conversion from 'float' to 'unsigned long', possible loss of data
+C:\Users\PURE\source\repos\Game\ProjectGame\main.cpp(806,23): warning C4244:  '=': conversion from 'int' to 'float', possible loss of data
+C:\Users\PURE\source\repos\Game\ProjectGame\main.cpp(823,22): warning C4244:  '=': conversion from 'int' to 'float', possible loss of data
+C:\Users\PURE\source\repos\Game\ProjectGame\main.cpp(835,26): warning C4244:  '=': conversion from 'float' to 'int', possible loss of data
+C:\Users\PURE\source\repos\Game\ProjectGame\main.cpp(836,26): warning C4244:  '=': conversion from 'float' to 'int', possible loss of data
+C:\Users\PURE\source\repos\Game\ProjectGame\main.cpp(981,43): warning C4244:  '=': conversion from 'float' to 'unsigned long', possible loss of data
+C:\Users\PURE\source\repos\Game\ProjectGame\main.cpp(1342,46): warning C4244:  'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\PURE\source\repos\Game\ProjectGame\main.cpp(1342,28): warning C4244:  'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\PURE\source\repos\Game\ProjectGame\main.cpp(1356,48): warning C4244:  'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\PURE\source\repos\Game\ProjectGame\main.cpp(1356,29): warning C4244:  'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\PURE\source\repos\Game\ProjectGame\main.cpp(1386,46): warning C4244:  'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\PURE\source\repos\Game\ProjectGame\main.cpp(1386,28): warning C4244:  'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\PURE\source\repos\Game\ProjectGame\main.cpp(1400,48): warning C4244:  'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\PURE\source\repos\Game\ProjectGame\main.cpp(1400,29): warning C4244:  'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\PURE\source\repos\Game\ProjectGame\main.cpp(1432,48): warning C4244:  'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\PURE\source\repos\Game\ProjectGame\main.cpp(1432,28): warning C4244:  'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\PURE\source\repos\Game\ProjectGame\main.cpp(1451,50): warning C4244:  'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\PURE\source\repos\Game\ProjectGame\main.cpp(1451,29): warning C4244:  'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\PURE\source\repos\Game\ProjectGame\main.cpp(1486,48): warning C4244:  'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\PURE\source\repos\Game\ProjectGame\main.cpp(1486,28): warning C4244:  'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\PURE\source\repos\Game\ProjectGame\main.cpp(1505,50): warning C4244:  'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\PURE\source\repos\Game\ProjectGame\main.cpp(1505,29): warning C4244:  'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\PURE\source\repos\Game\ProjectGame\main.cpp(1530,45): warning C4244:  'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\PURE\source\repos\Game\ProjectGame\main.cpp(1530,27): warning C4244:  'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\PURE\source\repos\Game\ProjectGame\main.cpp(1543,47): warning C4244:  'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\PURE\source\repos\Game\ProjectGame\main.cpp(1543,28): warning C4244:  'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\PURE\source\repos\Game\ProjectGame\main.cpp(1559,45): warning C4244:  'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\PURE\source\repos\Game\ProjectGame\main.cpp(1559,27): warning C4244:  'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\PURE\source\repos\Game\ProjectGame\main.cpp(1572,47): warning C4244:  'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\PURE\source\repos\Game\ProjectGame\main.cpp(1572,28): warning C4244:  'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\PURE\source\repos\Game\ProjectGame\main.cpp(1612,44): warning C4244:  'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\PURE\source\repos\Game\ProjectGame\main.cpp(1612,26): warning C4244:  'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\PURE\source\repos\Game\ProjectGame\main.cpp(1625,46): warning C4244:  'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\PURE\source\repos\Game\ProjectGame\main.cpp(1625,27): warning C4244:  'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\PURE\source\repos\Game\ProjectGame\main.cpp(1715,26): warning C4244:  '=': conversion from 'float' to 'int', possible loss of data
+C:\Users\PURE\source\repos\Game\ProjectGame\main.cpp(1716,26): warning C4244:  '=': conversion from 'float' to 'int', possible loss of data
+C:\Users\PURE\source\repos\Game\ProjectGame\main.cpp(1718,47): warning C4244:  'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\PURE\source\repos\Game\ProjectGame\main.cpp(1718,26): warning C4244:  'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\PURE\source\repos\Game\ProjectGame\main.cpp(1721,26): warning C4244:  '=': conversion from 'float' to 'int', possible loss of data
+C:\Users\PURE\source\repos\Game\ProjectGame\main.cpp(1722,26): warning C4244:  '=': conversion from 'float' to 'int', possible loss of data
+C:\Users\PURE\source\repos\Game\ProjectGame\main.cpp(1853,24): warning C4244:  '=': conversion from 'float' to 'int', possible loss of data
+C:\Users\PURE\source\repos\Game\ProjectGame\main.cpp(1854,26): warning C4244:  '=': conversion from 'float' to 'int', possible loss of data
+C:\Users\PURE\source\repos\Game\ProjectGame\main.cpp(1916,47): warning C4244:  'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\PURE\source\repos\Game\ProjectGame\main.cpp(1916,36): warning C4244:  'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\PURE\source\repos\Game\ProjectGame\main.cpp(1917,28): warning C4244:  'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\PURE\source\repos\Game\ProjectGame\main.cpp(1918,29): warning C4244:  'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\PURE\source\repos\Game\ProjectGame\main.cpp(1919,29): warning C4244:  'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\PURE\source\repos\Game\ProjectGame\main.cpp(1920,24): warning C4244:  'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\PURE\source\repos\Game\ProjectGame\main.cpp(1921,43): warning C4244:  'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\PURE\source\repos\Game\ProjectGame\main.cpp(1921,32): warning C4244:  'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\PURE\source\repos\Game\ProjectGame\main.cpp(1922,54): warning C4244:  'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\PURE\source\repos\Game\ProjectGame\main.cpp(1922,43): warning C4244:  'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\PURE\source\repos\Game\ProjectGame\main.cpp(1933,61): warning C4244:  'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\PURE\source\repos\Game\ProjectGame\main.cpp(1933,41): warning C4244:  'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\PURE\source\repos\Game\ProjectGame\main.cpp(1939,56): warning C4244:  'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\PURE\source\repos\Game\ProjectGame\main.cpp(1939,37): warning C4244:  'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\PURE\source\repos\Game\ProjectGame\main.cpp(1955,54): warning C4244:  'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\PURE\source\repos\Game\ProjectGame\main.cpp(1955,36): warning C4244:  'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\PURE\source\repos\Game\ProjectGame\main.cpp(1979,40): warning C4244:  'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\PURE\source\repos\Game\ProjectGame\main.cpp(1979,29): warning C4244:  'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\PURE\source\repos\Game\ProjectGame\main.cpp(1998,57): warning C4244:  'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\PURE\source\repos\Game\ProjectGame\main.cpp(1998,38): warning C4244:  'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\PURE\source\repos\Game\ProjectGame\main.cpp(2005,40): warning C4244:  'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\PURE\source\repos\Game\ProjectGame\main.cpp(2005,29): warning C4244:  'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\PURE\source\repos\Game\ProjectGame\main.cpp(2044,22): warning C4244:  '=': conversion from 'int' to 'float', possible loss of data
+C:\Users\PURE\source\repos\Game\ProjectGame\main.cpp(2062,22): warning C4244:  '=': conversion from 'int' to 'float', possible loss of data
+C:\Users\PURE\source\repos\Game\ProjectGame\main.cpp(2066,23): warning C4244:  '=': conversion from 'int' to 'float', possible loss of data
+C:\Users\PURE\source\repos\Game\ProjectGame\main.cpp(2070,23): warning C4244:  '=': conversion from 'int' to 'float', possible loss of data
+C:\Users\PURE\source\repos\Game\ProjectGame\main.cpp(2078,25): warning C4244:  '=': conversion from 'float' to 'int', possible loss of data
+C:\Users\PURE\source\repos\Game\ProjectGame\main.cpp(2079,25): warning C4244:  '=': conversion from 'float' to 'int', possible loss of data
+C:\Users\PURE\source\repos\Game\ProjectGame\main.cpp(2131,46): warning C4244:  'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\PURE\source\repos\Game\ProjectGame\main.cpp(2131,28): warning C4244:  'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\PURE\source\repos\Game\ProjectGame\main.cpp(2145,48): warning C4244:  'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\PURE\source\repos\Game\ProjectGame\main.cpp(2145,29): warning C4244:  'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\PURE\source\repos\Game\ProjectGame\main.cpp(2175,46): warning C4244:  'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\PURE\source\repos\Game\ProjectGame\main.cpp(2175,28): warning C4244:  'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\PURE\source\repos\Game\ProjectGame\main.cpp(2189,48): warning C4244:  'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\PURE\source\repos\Game\ProjectGame\main.cpp(2189,29): warning C4244:  'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\PURE\source\repos\Game\ProjectGame\main.cpp(2221,48): warning C4244:  'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\PURE\source\repos\Game\ProjectGame\main.cpp(2221,28): warning C4244:  'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\PURE\source\repos\Game\ProjectGame\main.cpp(2240,50): warning C4244:  'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\PURE\source\repos\Game\ProjectGame\main.cpp(2240,29): warning C4244:  'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\PURE\source\repos\Game\ProjectGame\main.cpp(2275,48): warning C4244:  'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\PURE\source\repos\Game\ProjectGame\main.cpp(2275,28): warning C4244:  'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\PURE\source\repos\Game\ProjectGame\main.cpp(2294,50): warning C4244:  'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\PURE\source\repos\Game\ProjectGame\main.cpp(2294,29): warning C4244:  'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\PURE\source\repos\Game\ProjectGame\main.cpp(2319,45): warning C4244:  'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\PURE\source\repos\Game\ProjectGame\main.cpp(2319,27): warning C4244:  'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\PURE\source\repos\Game\ProjectGame\main.cpp(2332,47): warning C4244:  'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\PURE\source\repos\Game\ProjectGame\main.cpp(2332,28): warning C4244:  'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\PURE\source\repos\Game\ProjectGame\main.cpp(2348,45): warning C4244:  'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\PURE\source\repos\Game\ProjectGame\main.cpp(2348,27): warning C4244:  'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\PURE\source\repos\Game\ProjectGame\main.cpp(2361,47): warning C4244:  'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\PURE\source\repos\Game\ProjectGame\main.cpp(2361,28): warning C4244:  'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\PURE\source\repos\Game\ProjectGame\main.cpp(2420,44): warning C4244:  'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\PURE\source\repos\Game\ProjectGame\main.cpp(2420,26): warning C4244:  'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\PURE\source\repos\Game\ProjectGame\main.cpp(2433,46): warning C4244:  'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\PURE\source\repos\Game\ProjectGame\main.cpp(2433,27): warning C4244:  'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\PURE\source\repos\Game\ProjectGame\main.cpp(2529,26): warning C4244:  '=': conversion from 'float' to 'int', possible loss of data
+C:\Users\PURE\source\repos\Game\ProjectGame\main.cpp(2530,26): warning C4244:  '=': conversion from 'float' to 'int', possible loss of data
+C:\Users\PURE\source\repos\Game\ProjectGame\main.cpp(2532,47): warning C4244:  'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\PURE\source\repos\Game\ProjectGame\main.cpp(2532,26): warning C4244:  'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\PURE\source\repos\Game\ProjectGame\main.cpp(2535,26): warning C4244:  '=': conversion from 'float' to 'int', possible loss of data
+C:\Users\PURE\source\repos\Game\ProjectGame\main.cpp(2536,26): warning C4244:  '=': conversion from 'float' to 'int', possible loss of data
+C:\Users\PURE\source\repos\Game\ProjectGame\main.cpp(2690,23): warning C4305:  '-=': truncation from 'double' to 'float'
+C:\Users\PURE\source\repos\Game\ProjectGame\main.cpp(2697,24): warning C4305:  '-=': truncation from 'double' to 'float'
+C:\Users\PURE\source\repos\Game\ProjectGame\main.cpp(2707,22): warning C4305:  '-=': truncation from 'double' to 'float'
+C:\Users\PURE\source\repos\Game\ProjectGame\main.cpp(2777,24): warning C4244:  '=': conversion from 'float' to 'int', possible loss of data
+C:\Users\PURE\source\repos\Game\ProjectGame\main.cpp(2778,26): warning C4244:  '=': conversion from 'float' to 'int', possible loss of data
+C:\Users\PURE\source\repos\Game\ProjectGame\main.cpp(2815,27): warning C4244:  'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\PURE\source\repos\Game\ProjectGame\main.cpp(2817,28): warning C4244:  'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\PURE\source\repos\Game\ProjectGame\main.cpp(2820,47): warning C4244:  'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\PURE\source\repos\Game\ProjectGame\main.cpp(2820,36): warning C4244:  'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\PURE\source\repos\Game\ProjectGame\main.cpp(2821,28): warning C4244:  'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\PURE\source\repos\Game\ProjectGame\main.cpp(2822,29): warning C4244:  'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\PURE\source\repos\Game\ProjectGame\main.cpp(2823,29): warning C4244:  'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\PURE\source\repos\Game\ProjectGame\main.cpp(2824,24): warning C4244:  'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\PURE\source\repos\Game\ProjectGame\main.cpp(2825,43): warning C4244:  'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\PURE\source\repos\Game\ProjectGame\main.cpp(2825,32): warning C4244:  'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\PURE\source\repos\Game\ProjectGame\main.cpp(2826,54): warning C4244:  'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\PURE\source\repos\Game\ProjectGame\main.cpp(2826,43): warning C4244:  'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\PURE\source\repos\Game\ProjectGame\main.cpp(2836,58): warning C4244:  'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\PURE\source\repos\Game\ProjectGame\main.cpp(2836,40): warning C4244:  'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\PURE\source\repos\Game\ProjectGame\main.cpp(2853,54): warning C4244:  'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\PURE\source\repos\Game\ProjectGame\main.cpp(2853,36): warning C4244:  'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\PURE\source\repos\Game\ProjectGame\main.cpp(2860,30): warning C4244:  'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\PURE\source\repos\Game\ProjectGame\main.cpp(2885,42): warning C4244:  'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\PURE\source\repos\Game\ProjectGame\main.cpp(2885,31): warning C4244:  'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\PURE\source\repos\Game\ProjectGame\main.cpp(2904,57): warning C4244:  'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\PURE\source\repos\Game\ProjectGame\main.cpp(2904,38): warning C4244:  'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\PURE\source\repos\Game\ProjectGame\main.cpp(2911,40): warning C4244:  'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\PURE\source\repos\Game\ProjectGame\main.cpp(2911,29): warning C4244:  'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\PURE\source\repos\Game\ProjectGame\main.cpp(3029,46): warning C4244:  'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\PURE\source\repos\Game\ProjectGame\main.cpp(3029,28): warning C4244:  'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\PURE\source\repos\Game\ProjectGame\main.cpp(3043,48): warning C4244:  'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\PURE\source\repos\Game\ProjectGame\main.cpp(3043,29): warning C4244:  'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\PURE\source\repos\Game\ProjectGame\main.cpp(3085,46): warning C4244:  'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\PURE\source\repos\Game\ProjectGame\main.cpp(3085,28): warning C4244:  'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\PURE\source\repos\Game\ProjectGame\main.cpp(3099,48): warning C4244:  'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\PURE\source\repos\Game\ProjectGame\main.cpp(3099,29): warning C4244:  'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\PURE\source\repos\Game\ProjectGame\main.cpp(3142,48): warning C4244:  'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\PURE\source\repos\Game\ProjectGame\main.cpp(3142,28): warning C4244:  'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\PURE\source\repos\Game\ProjectGame\main.cpp(3161,50): warning C4244:  'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\PURE\source\repos\Game\ProjectGame\main.cpp(3161,29): warning C4244:  'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\PURE\source\repos\Game\ProjectGame\main.cpp(3206,48): warning C4244:  'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\PURE\source\repos\Game\ProjectGame\main.cpp(3206,28): warning C4244:  'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\PURE\source\repos\Game\ProjectGame\main.cpp(3225,50): warning C4244:  'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\PURE\source\repos\Game\ProjectGame\main.cpp(3225,29): warning C4244:  'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\PURE\source\repos\Game\ProjectGame\main.cpp(3531,24): warning C4305:  '-=': truncation from 'double' to 'float'
+C:\Users\PURE\source\repos\Game\ProjectGame\main.cpp(3538,24): warning C4305:  '-=': truncation from 'double' to 'float'
+C:\Users\PURE\source\repos\Game\ProjectGame\main.cpp(3548,22): warning C4305:  '-=': truncation from 'double' to 'float'
+C:\Users\PURE\source\repos\Game\ProjectGame\main.cpp(3569,47): warning C4244:  'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\PURE\source\repos\Game\ProjectGame\main.cpp(3569,36): warning C4244:  'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\PURE\source\repos\Game\ProjectGame\main.cpp(3570,28): warning C4244:  'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\PURE\source\repos\Game\ProjectGame\main.cpp(3571,29): warning C4244:  'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\PURE\source\repos\Game\ProjectGame\main.cpp(3572,29): warning C4244:  'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\PURE\source\repos\Game\ProjectGame\main.cpp(3573,24): warning C4244:  'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\PURE\source\repos\Game\ProjectGame\main.cpp(3574,43): warning C4244:  'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\PURE\source\repos\Game\ProjectGame\main.cpp(3574,32): warning C4244:  'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\PURE\source\repos\Game\ProjectGame\main.cpp(3575,54): warning C4244:  'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\PURE\source\repos\Game\ProjectGame\main.cpp(3575,43): warning C4244:  'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\PURE\source\repos\Game\ProjectGame\main.cpp(3593,33): warning C4244:  'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\PURE\source\repos\Game\ProjectGame\main.cpp(3601,40): warning C4244:  'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\PURE\source\repos\Game\ProjectGame\main.cpp(3601,29): warning C4244:  'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\PURE\source\repos\Game\ProjectGame\main.cpp(3606,42): warning C4244:  'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\PURE\source\repos\Game\ProjectGame\main.cpp(3606,31): warning C4244:  'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\PURE\source\repos\Game\ProjectGame\main.cpp(3654,45): warning C4244:  '=': conversion from 'float' to 'unsigned long', possible loss of data
+C:\Users\PURE\source\repos\Game\ProjectGame\main.cpp(547,7): warning C4101:  'Name': unreferenced local variable
+  ProjectGame.vcxproj -> C:\Users\PURE\source\repos\Game\Debug\ProjectGame.exe
