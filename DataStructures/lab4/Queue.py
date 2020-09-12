@@ -18,11 +18,3 @@ class Queue():
     def size(self):
         return len(self.item)
 
-q1 = Queue([])
-print(q1.item)
-q1.enQueue('A')
-print(q1.item)
-q1.enQueue('B')
-print(q1.item)
-q1.deQueue()
-print(q1.item)

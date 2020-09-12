@@ -58,3 +58,11 @@ class SinglyLinkedList:
     def removeData(self, data):
         if self.isIn(data):
             self.deleteAfter(self.indexOf(data)-1)
+
+l = SinglyLinkedList()
+x = input("Enter Input : ").split(', ')
+a = x[0].split() 
+b = x[1:]
+for item in a:
+    l.append(item)
+print(l)
