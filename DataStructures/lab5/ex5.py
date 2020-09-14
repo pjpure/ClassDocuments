@@ -79,61 +79,76 @@ class DoublyLinkedList:
                 break
             q = q.next
 
-class Queue:
-    def __init__(self, item=None):
-        self.item = DoublyLinkedList()
-        if item!=None:
-            for i in item:
-                self.item.append(i)
+    def sortInsertBefore(self,data):
+        p = self.header.next
+        while p.data != None:
+            if data < p.data:
+                self.insertBefore(p,data)
+                break
+            else:
+                p = p.next
+        else:
+            self.append(data)
 
-    def enQueue(self, item):
-        self.item.append(item)
 
-    def deQueue(self):
-        if self.size()>0:
-            return self.item.delete(0)
+def get_digit(n, d):
+    n = abs(n)
+    for i in range(d-1):
+        n //= 10
+    return n % 10
 
-    def isEmpty(self):
-        return self.size() == 0
-
-    def size(self):
-        return self.item.size
-    
-def get_digit(n,d):
-	for i in range(d-1):
-		n//=10
-	return n%10
 
 def get_max_bits(n):
 	i = 0
 	while n > 0:
-		n//=10
-		i+=1
+		n //= 10
+		i += 1
 	return i
 
+
+
 def radix_sort(l):
-	q = Queue(l)
-	max_bits = get_max_bits(max(l))
-	qq=[]
-	for _ in range(10):
-		qq.append(Queue())
+    q = DoublyLinkedList()
 
-	for i in range(1,max_bits+1):
-		print('Round',i)
-		while not q.isEmpty():
-			num = q.deQueue()
-			num_digit = get_digit(num,i)
-			qq[num_digit].enQueue(num)
+    qq=[]
+    for _ in range(10):
+        qq.append(DoublyLinkedList())
+	
+    max_bits = get_max_bits(max(l))
+
+    for item in l:
+        q.append(item)
+
+    rounds = 0
+    for i in range(1,max_bits+2):
+        rounds+=1
+        print("------------------------------------------------------------")
+        print('Round :',i)
+        
+        while not q.isEmpty():
+        	num = q.delete(0)
+        	num_digit = get_digit(num,i)
+        	qq[num_digit].sortInsertBefore(num)
+        count = 0
+        for i in range(1,10):
+            if qq[i].isEmpty():
+                count+=1
 		
-		for i in range(10):
-			#print(i,':',sorted(qq[i].item))
-			while not qq[i].isEmpty():
-				q.enQueue(qq[i].deQueue())
-			
-	return q.item
+        for i in range(10):
+        	print(i,':',qq[i])
+        	while not qq[i].isEmpty():
+        		q.append(qq[i].delete(0))
+        if count==9:
+            print("------------------------------------------------------------")
+            print(rounds-1,"Time(s)") 
+            break   
+    return q
 
-inp = input("Enter Input : ").split()
-for i in range(len(inp)):
-	inp[i] = int(inp[i])
-print(radix_sort(inp))
-
+if __name__ == "__main__": 
+    inp = input("Enter Input : ").split()
+    x = inp.copy()
+    for i in range(len(inp)):
+        inp[i] = int(inp[i])
+    af = radix_sort(inp)
+    print("Before Radix Sort :",' -> '.join(x))
+    print("After  Radix Sort :",' -> '.join(af.__str__().split()))

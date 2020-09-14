@@ -60,16 +60,14 @@ class DoublyLinkedList:
         self.insertBefore(self.nodeAt(i), data)
 
     def removeNode(self, q):
-        a = q.data
         p = q.prev
         x = q.next
         p.next = x
         x.prev = p
         self.size -= 1
-        return a
 
     def delete(self, i):
-        return self.removeNode(self.nodeAt(i))
+        self.removeNode(self.nodeAt(i))
 
     def remove(self, data):
         q = self.header.next
@@ -90,50 +88,18 @@ class Queue:
         self.item.append(item)
 
     def deQueue(self):
-        if self.size()>0:
-            return self.item.delete(0)
+        return self.item.delete(0)
 
     def isEmpty(self):
-        return self.size() == 0
+        return self.item.isEmpty()
 
     def size(self):
         return self.item.size
-    
-def get_digit(n,d):
-	for i in range(d-1):
-		n//=10
-	return n%10
-
-def get_max_bits(n):
-	i = 0
-	while n > 0:
-		n//=10
-		i+=1
-	return i
-
-def radix_sort(l):
-	q = Queue(l)
-	max_bits = get_max_bits(max(l))
-	qq=[]
-	for _ in range(10):
-		qq.append(Queue())
-
-	for i in range(1,max_bits+1):
-		print('Round',i)
-		while not q.isEmpty():
-			num = q.deQueue()
-			num_digit = get_digit(num,i)
-			qq[num_digit].enQueue(num)
-		
-		for i in range(10):
-			#print(i,':',sorted(qq[i].item))
-			while not qq[i].isEmpty():
-				q.enQueue(qq[i].deQueue())
-			
-	return q.item
 
 inp = input("Enter Input : ").split()
 for i in range(len(inp)):
 	inp[i] = int(inp[i])
-print(radix_sort(inp))
-
+q = Queue(inp)
+q.enQueue(999)
+q.deQueue()
+print(q.item)
