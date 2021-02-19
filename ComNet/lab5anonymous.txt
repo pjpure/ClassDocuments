@@ -1,0 +1,19 @@
+220 (vsFTPd 2.0.3)
+USER anonymous
+331 Please specify the password.
+PASS anypwd
+230 Login successful.
+PORT 192,168,0,101,206,177
+200 PORT command successful. Consider using PASV.
+NLST
+150 Here comes the directory listing.
+226 Directory send OK.
+TYPE I
+200 Switching to Binary mode.
+PORT 192,168,0,101,206,178
+200 PORT command successful. Consider using PASV.
+RETR pantheon.jpg
+150 Opening BINARY mode data connection for pantheon.jpg (5544612 bytes).
+226 File send OK.
+QUIT
+221 Goodbye.
