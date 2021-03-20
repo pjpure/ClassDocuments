@@ -46,7 +46,6 @@ boxplot(avg_vote, main = "คะแนนโหวตเฉลี่ย",
         las=1
         )
 
-
 boxplot(income, main = "รายได้รวมทั่วโลก",
         ylab = "รายได้(ล้านดอลลาร์สหรัฐ)",
         las=1
@@ -64,7 +63,6 @@ plot(avg_vote,income,xlab="คะแนนโหวตเฉลี่ย(คะ�
 
 boxplot(avg_vote)
 boxplot.stats(avg_vote,coef=5)$out
-
 boxplot(income)
 boxplot.stats(income,coef=5)$out
 
