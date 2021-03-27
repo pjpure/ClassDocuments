@@ -19,6 +19,7 @@ pdfAvgVote = dnorm(x=avg_vote,mean = mean(avg_vote),sd=sd(avg_vote))
 plot(avg_vote,pdfAvgVote,xlim = c(0,10),col = "dodgerblue4" ,main = "Probability Density Function of Average score",ylab="Probability density"
      ,xlab = "คะแนนโหวตเฉลี่ย(คะแนน)")
 lines(smooth.spline(avg_vote,pdfAvgVote), col='red',lwd=2)
+polygon(avg_vote, pdf, col="light green", border=FALSE)
 
 
 
