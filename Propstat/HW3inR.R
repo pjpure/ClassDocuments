@@ -36,4 +36,5 @@ plot(avg_vote,cpfAvgVote,xlim = c(0,10),col = "dodgerblue4" ,main = "Cumulative 
      ,xlab = "คะแนนโหวตเฉลี่ย(คะแนน)")
 lines(smooth.spline(avg_vote,cpfAvgVote), col='red',lwd=2)
 
+plot(ecdf(avg_vote))
       
