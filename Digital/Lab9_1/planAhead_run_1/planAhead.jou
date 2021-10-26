@@ -1,0 +1,11 @@
+#-----------------------------------------------------------
+# PlanAhead v14.7 (64-bit)
+# Build 321239 by xbuild on Fri Sep 27 19:29:51 MDT 2013
+# Start of session at: Wed Nov 04 21:21:48 2020
+# Process ID: 13664
+# Log file: C:/.Xilinx/Lab9_1/planAhead_run_1/planAhead.log
+# Journal file: C:/.Xilinx/Lab9_1/planAhead_run_1/planAhead.jou
+#-----------------------------------------------------------
+start_gui
+source C:/.Xilinx/Lab9_1/pa.fromHdl.tcl
+update_compile_order -fileset sim_1

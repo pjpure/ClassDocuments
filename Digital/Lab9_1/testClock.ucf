@@ -1,0 +1,2 @@
+NET "clock" LOC = P123;
+NET "led" LOC = P95;

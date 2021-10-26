@@ -1,0 +1,85 @@
+--------------------------------------------------------------------------------
+Release 14.7 Trace  (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\trce.exe -intstyle ise -v 3 -s 3
+-n 3 -fastpaths -xml seg7.twx seg7.ncd -o seg7.twr seg7.pcf -ucf seg7.ucf
+
+Design file:              seg7.ncd
+Physical constraint file: seg7.pcf
+Device,package,speed:     xc6slx9,tqg144,C,-3 (PRODUCTION 1.23 2013-10-13)
+Report level:             verbose report
+
+Environment Variable      Effect 
+--------------------      ------ 
+NONE                      No environment variables were set
+--------------------------------------------------------------------------------
+
+INFO:Timing:2698 - No timing constraints found, doing default enumeration.
+INFO:Timing:3412 - To improve timing, see the Timing Closure User Guide (UG612).
+INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths 
+   option. All paths that are not constrained will be reported in the 
+   unconstrained paths section(s) of the report.
+INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on 
+   a 50 Ohm transmission line loading model.  For the details of this model, 
+   and for more information on accounting for different loading conditions, 
+   please see the device datasheet.
+
+
+
+Data Sheet report:
+-----------------
+All values displayed in nanoseconds (ns)
+
+Setup/Hold to clock Clock_10
+------------+------------+------------+------------+------------+------------------+--------+
+            |Max Setup to|  Process   |Max Hold to |  Process   |                  | Clock  |
+Source      | clk (edge) |   Corner   | clk (edge) |   Corner   |Internal Clock(s) | Phase  |
+------------+------------+------------+------------+------------+------------------+--------+
+Ja          |   -1.404(R)|      FAST  |    3.677(R)|      SLOW  |Clock_10_BUFGP    |   0.000|
+clear       |   -0.912(R)|      FAST  |    3.221(R)|      SLOW  |Clock_10_BUFGP    |   0.000|
+------------+------------+------------+------------+------------+------------------+--------+
+
+Clock Clock_10 to Pad
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+            |Max (slowest) clk|  Process   |Min (fastest) clk|  Process   |                  | Clock  |
+Destination |  (edge) to PAD  |   Corner   |  (edge) to PAD  |   Corner   |Internal Clock(s) | Phase  |
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+a           |        12.677(R)|      SLOW  |         6.860(R)|      FAST  |Clock_10_BUFGP    |   0.000|
+b           |        12.693(R)|      SLOW  |         6.622(R)|      FAST  |Clock_10_BUFGP    |   0.000|
+c           |        12.212(R)|      SLOW  |         6.543(R)|      FAST  |Clock_10_BUFGP    |   0.000|
+d           |        12.151(R)|      SLOW  |         6.557(R)|      FAST  |Clock_10_BUFGP    |   0.000|
+e           |        12.163(R)|      SLOW  |         6.609(R)|      FAST  |Clock_10_BUFGP    |   0.000|
+f           |        11.231(R)|      SLOW  |         6.445(R)|      FAST  |Clock_10_BUFGP    |   0.000|
+g           |        12.227(R)|      SLOW  |         6.919(R)|      FAST  |Clock_10_BUFGP    |   0.000|
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+
+Clock to Setup on destination clock Clock_10
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+Clock_10       |    1.700|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Pad to Pad
+---------------+---------------+---------+
+Source Pad     |Destination Pad|  Delay  |
+---------------+---------------+---------+
+Ja             |com1           |    7.011|
+Ja             |com2           |    7.587|
+Ja             |com3           |    8.435|
+---------------+---------------+---------+
+
+
+Analysis completed Tue Oct 13 20:43:26 2020 
+--------------------------------------------------------------------------------
+
+Trace Settings:
+-------------------------
+Trace Settings 
+
+Peak Memory Usage: 4549 MB
+
+
+

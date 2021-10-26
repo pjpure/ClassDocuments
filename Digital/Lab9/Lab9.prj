@@ -1,0 +1,8 @@
+verilog work "div2.vf"
+verilog work "selectCommon.vf"
+verilog work "Mux16.vf"
+verilog work "input2.vf"
+verilog work "input1.vf"
+verilog work "DIV.vf"
+verilog work "BCD27.vf"
+verilog work "Lab9.vf"

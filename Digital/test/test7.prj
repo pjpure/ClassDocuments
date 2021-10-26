@@ -1,0 +1,7 @@
+verilog work "nub15.vf"
+vhdl work "muxSEL.vhd"
+vhdl work "debounce.vhd"
+vhdl work "clockdot5hz.vhd"
+vhdl work "clockDiv.vhd"
+verilog work "BCD27.vf"
+verilog work "test7.vf"

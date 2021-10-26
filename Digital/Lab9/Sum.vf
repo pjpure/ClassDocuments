@@ -1,0 +1,159 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 14.7
+//  \   \         Application : sch2hdl
+//  /   /         Filename : Sum.vf
+// /___/   /\     Timestamp : 11/04/2020 15:47:41
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: sch2hdl -intstyle ise -family spartan6 -verilog C:/.Xilinx/lab8/Sum.vf -w C:/.Xilinx/lab8/Sum.sch
+//Design Name: Sum
+//Device: spartan6
+//Purpose:
+//    This verilog netlist is translated from an ECS schematic.It can be 
+//    synthesized and simulated, but it should not be modified. 
+//
+`timescale 1ns / 1ps
+
+module fullAdder_MUSER_Sum(A, 
+                           B, 
+                           C, 
+                           Carray, 
+                           SUM);
+
+    input A;
+    input B;
+    input C;
+   output Carray;
+   output SUM;
+   
+   wire XLXN_6;
+   wire XLXN_7;
+   wire XLXN_8;
+   
+   XOR2  XLXI_1 (.I0(B), 
+                .I1(A), 
+                .O(XLXN_6));
+   XOR2  XLXI_2 (.I0(C), 
+                .I1(XLXN_6), 
+                .O(SUM));
+   AND2  XLXI_3 (.I0(XLXN_6), 
+                .I1(C), 
+                .O(XLXN_7));
+   AND2  XLXI_4 (.I0(B), 
+                .I1(A), 
+                .O(XLXN_8));
+   OR2  XLXI_6 (.I0(XLXN_8), 
+               .I1(XLXN_7), 
+               .O(Carray));
+endmodule
+`timescale 1ns / 1ps
+
+module Sum(a0, 
+           a1, 
+           a2, 
+           a3, 
+           a4, 
+           a5, 
+           a6, 
+           a7, 
+           b0, 
+           b1, 
+           b2, 
+           b3, 
+           b4, 
+           b5, 
+           b6, 
+           b7, 
+           o1, 
+           o2, 
+           o3, 
+           o4, 
+           o5, 
+           o6, 
+           o7, 
+           o8, 
+           o9);
+
+    input a0;
+    input a1;
+    input a2;
+    input a3;
+    input a4;
+    input a5;
+    input a6;
+    input a7;
+    input b0;
+    input b1;
+    input b2;
+    input b3;
+    input b4;
+    input b5;
+    input b6;
+    input b7;
+   output o1;
+   output o2;
+   output o3;
+   output o4;
+   output o5;
+   output o6;
+   output o7;
+   output o8;
+   output o9;
+   
+   wire XLXN_1;
+   wire XLXN_2;
+   wire XLXN_3;
+   wire XLXN_4;
+   wire XLXN_5;
+   wire XLXN_6;
+   wire XLXN_14;
+   wire XLXN_35;
+   
+   fullAdder_MUSER_Sum  XLXI_1 (.A(a0), 
+                               .B(b0), 
+                               .C(XLXN_35), 
+                               .Carray(XLXN_1), 
+                               .SUM(o1));
+   fullAdder_MUSER_Sum  XLXI_2 (.A(a1), 
+                               .B(b1), 
+                               .C(XLXN_1), 
+                               .Carray(XLXN_14), 
+                               .SUM(o2));
+   fullAdder_MUSER_Sum  XLXI_3 (.A(a2), 
+                               .B(b2), 
+                               .C(XLXN_14), 
+                               .Carray(XLXN_2), 
+                               .SUM(o3));
+   fullAdder_MUSER_Sum  XLXI_4 (.A(a3), 
+                               .B(b3), 
+                               .C(XLXN_2), 
+                               .Carray(XLXN_3), 
+                               .SUM(o4));
+   fullAdder_MUSER_Sum  XLXI_5 (.A(a4), 
+                               .B(b4), 
+                               .C(XLXN_3), 
+                               .Carray(XLXN_4), 
+                               .SUM(o5));
+   fullAdder_MUSER_Sum  XLXI_6 (.A(a5), 
+                               .B(b5), 
+                               .C(XLXN_4), 
+                               .Carray(XLXN_5), 
+                               .SUM(o6));
+   fullAdder_MUSER_Sum  XLXI_7 (.A(a6), 
+                               .B(b6), 
+                               .C(XLXN_5), 
+                               .Carray(XLXN_6), 
+                               .SUM(o7));
+   fullAdder_MUSER_Sum  XLXI_8 (.A(a7), 
+                               .B(b7), 
+                               .C(XLXN_6), 
+                               .Carray(o9), 
+                               .SUM(o8));
+   GND  XLXI_9 (.G(XLXN_35));
+endmodule

@@ -1,0 +1,197 @@
+--------------------------------------------------------------------------------
+Release 14.7 Trace  (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\trce.exe -intstyle ise -v 3 -s 3
+-n 3 -fastpaths -xml lab9.twx lab9.ncd -o lab9.twr lab9.pcf -ucf lab9.ucf
+
+Design file:              lab9.ncd
+Physical constraint file: lab9.pcf
+Device,package,speed:     xc6slx9,tqg144,C,-3 (PRODUCTION 1.23 2013-10-13)
+Report level:             verbose report
+
+Environment Variable      Effect 
+--------------------      ------ 
+NONE                      No environment variables were set
+--------------------------------------------------------------------------------
+
+INFO:Timing:2698 - No timing constraints found, doing default enumeration.
+INFO:Timing:3412 - To improve timing, see the Timing Closure User Guide (UG612).
+INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths 
+   option. All paths that are not constrained will be reported in the 
+   unconstrained paths section(s) of the report.
+INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on 
+   a 50 Ohm transmission line loading model.  For the details of this model, 
+   and for more information on accounting for different loading conditions, 
+   please see the device datasheet.
+
+
+
+Data Sheet report:
+-----------------
+All values displayed in nanoseconds (ns)
+
+Clock PB1 to Pad
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+            |Max (slowest) clk|  Process   |Min (fastest) clk|  Process   |                  | Clock  |
+Destination |  (edge) to PAD  |   Corner   |  (edge) to PAD  |   Corner   |Internal Clock(s) | Phase  |
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+MN4         |        11.225(R)|      SLOW  |         6.344(R)|      FAST  |PB1_BUFGP         |   0.000|
+MN5         |        11.092(R)|      SLOW  |         6.217(R)|      FAST  |PB1_BUFGP         |   0.000|
+MN6         |        11.369(R)|      SLOW  |         6.374(R)|      FAST  |PB1_BUFGP         |   0.000|
+MN7         |        11.096(R)|      SLOW  |         6.243(R)|      FAST  |PB1_BUFGP         |   0.000|
+a           |        16.045(R)|      SLOW  |         8.387(R)|      FAST  |PB1_BUFGP         |   0.000|
+b           |        16.207(R)|      SLOW  |         8.546(R)|      FAST  |PB1_BUFGP         |   0.000|
+c           |        16.177(R)|      SLOW  |         8.266(R)|      FAST  |PB1_BUFGP         |   0.000|
+d           |        16.283(R)|      SLOW  |         8.440(R)|      FAST  |PB1_BUFGP         |   0.000|
+e           |        16.706(R)|      SLOW  |         8.441(R)|      FAST  |PB1_BUFGP         |   0.000|
+f           |        15.822(R)|      SLOW  |         8.082(R)|      FAST  |PB1_BUFGP         |   0.000|
+g           |        16.035(R)|      SLOW  |         7.981(R)|      FAST  |PB1_BUFGP         |   0.000|
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+
+Clock to Setup on destination clock PB1
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+PB1            |    1.249|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock clock
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clock          |    0.873|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Pad to Pad
+---------------+---------------+---------+
+Source Pad     |Destination Pad|  Delay  |
+---------------+---------------+---------+
+DP<1>          |a              |   13.763|
+DP<1>          |b              |   13.794|
+DP<1>          |c              |   13.572|
+DP<1>          |d              |   13.678|
+DP<1>          |e              |   13.951|
+DP<1>          |f              |   13.417|
+DP<1>          |g              |   13.290|
+DP<2>          |a              |   14.066|
+DP<2>          |b              |   14.216|
+DP<2>          |c              |   14.082|
+DP<2>          |d              |   14.188|
+DP<2>          |e              |   14.668|
+DP<2>          |f              |   13.720|
+DP<2>          |g              |   13.834|
+DP<3>          |a              |   14.187|
+DP<3>          |b              |   14.302|
+DP<3>          |c              |   14.176|
+DP<3>          |d              |   14.282|
+DP<3>          |e              |   14.754|
+DP<3>          |f              |   13.841|
+DP<3>          |g              |   14.034|
+DP<4>          |a              |   14.067|
+DP<4>          |b              |   14.098|
+DP<4>          |c              |   14.010|
+DP<4>          |d              |   14.116|
+DP<4>          |e              |   14.539|
+DP<4>          |f              |   13.721|
+DP<4>          |g              |   13.868|
+DP<5>          |a              |   14.070|
+DP<5>          |b              |   14.101|
+DP<5>          |c              |   13.972|
+DP<5>          |d              |   14.078|
+DP<5>          |e              |   14.501|
+DP<5>          |f              |   13.724|
+DP<5>          |g              |   13.830|
+DP<6>          |a              |   13.811|
+DP<6>          |b              |   13.842|
+DP<6>          |c              |   13.701|
+DP<6>          |d              |   13.807|
+DP<6>          |e              |   14.275|
+DP<6>          |f              |   13.465|
+DP<6>          |g              |   13.559|
+DP<7>          |a              |   13.829|
+DP<7>          |b              |   13.933|
+DP<7>          |c              |   13.903|
+DP<7>          |d              |   14.009|
+DP<7>          |e              |   14.432|
+DP<7>          |f              |   13.548|
+DP<7>          |g              |   13.761|
+DP<8>          |a              |   14.063|
+DP<8>          |b              |   14.213|
+DP<8>          |c              |   14.183|
+DP<8>          |d              |   14.289|
+DP<8>          |e              |   14.712|
+DP<8>          |f              |   13.828|
+DP<8>          |g              |   14.041|
+SW<0>          |a              |   14.665|
+SW<0>          |b              |   14.696|
+SW<0>          |c              |   14.517|
+SW<0>          |d              |   14.623|
+SW<0>          |e              |   15.061|
+SW<0>          |f              |   14.319|
+SW<0>          |g              |   14.375|
+SW<1>          |a              |   14.829|
+SW<1>          |b              |   14.860|
+SW<1>          |c              |   14.681|
+SW<1>          |d              |   14.787|
+SW<1>          |e              |   15.225|
+SW<1>          |f              |   14.483|
+SW<1>          |g              |   14.539|
+SW<2>          |a              |   14.685|
+SW<2>          |b              |   14.716|
+SW<2>          |c              |   14.537|
+SW<2>          |d              |   14.643|
+SW<2>          |e              |   15.081|
+SW<2>          |f              |   14.339|
+SW<2>          |g              |   14.395|
+SW<3>          |a              |   14.451|
+SW<3>          |b              |   14.482|
+SW<3>          |c              |   14.303|
+SW<3>          |d              |   14.409|
+SW<3>          |e              |   14.847|
+SW<3>          |f              |   14.105|
+SW<3>          |g              |   14.161|
+SW<4>          |a              |   14.818|
+SW<4>          |b              |   14.849|
+SW<4>          |c              |   14.670|
+SW<4>          |d              |   14.776|
+SW<4>          |e              |   15.214|
+SW<4>          |f              |   14.472|
+SW<4>          |g              |   14.528|
+SW<5>          |a              |   14.675|
+SW<5>          |b              |   14.706|
+SW<5>          |c              |   14.527|
+SW<5>          |d              |   14.633|
+SW<5>          |e              |   15.071|
+SW<5>          |f              |   14.329|
+SW<5>          |g              |   14.385|
+SW<6>          |a              |   14.327|
+SW<6>          |b              |   14.358|
+SW<6>          |c              |   14.136|
+SW<6>          |d              |   14.242|
+SW<6>          |e              |   14.697|
+SW<6>          |f              |   13.981|
+SW<6>          |g              |   13.863|
+SW<7>          |a              |   14.158|
+SW<7>          |b              |   14.189|
+SW<7>          |c              |   13.967|
+SW<7>          |d              |   14.073|
+SW<7>          |e              |   14.346|
+SW<7>          |f              |   13.812|
+SW<7>          |g              |   13.685|
+---------------+---------------+---------+
+
+
+Analysis completed Thu Nov 05 14:05:16 2020 
+--------------------------------------------------------------------------------
+
+Trace Settings:
+-------------------------
+Trace Settings 
+
+Peak Memory Usage: 4549 MB
+
+
+

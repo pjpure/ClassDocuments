@@ -1,0 +1,22 @@
+
+
+
+
+# PlanAhead Generated physical constraints 
+
+NET "MN[0]" LOC = P95;
+NET "MN[1]" LOC = P94;
+NET "MN[2]" LOC = P93;
+NET "MN[3]" LOC = P92;
+NET "MN[4]" LOC = P88;
+NET "MN[5]" LOC = P87;
+NET "MN[6]" LOC = P85;
+NET "MN[7]" LOC = P84;
+NET "DP[8]" LOC = P99;
+NET "DP[7]" LOC = P100;
+NET "DP[6]" LOC = P101;
+NET "DP[5]" LOC = P102;
+NET "DP[4]" LOC = P104;
+NET "DP[3]" LOC = P105;
+NET "DP[2]" LOC = P111;
+NET "DP[1]" LOC = P112;

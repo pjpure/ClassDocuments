@@ -1,0 +1,4 @@
+verilog work "div2.vf"
+verilog work "DIV.vf"
+verilog work "CLK1Hz.vf"
+verilog work "testClock.vf"

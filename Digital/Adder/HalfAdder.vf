@@ -1,0 +1,40 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 14.7
+//  \   \         Application : sch2hdl
+//  /   /         Filename : HalfAdder.vf
+// /___/   /\     Timestamp : 08/05/2020 19:28:35
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: sch2hdl -intstyle ise -family spartan6 -verilog C:/.Xilinx/Adder/HalfAdder.vf -w C:/.Xilinx/Adder/HalfAdder.sch
+//Design Name: HalfAdder
+//Device: spartan6
+//Purpose:
+//    This verilog netlist is translated from an ECS schematic.It can be 
+//    synthesized and simulated, but it should not be modified. 
+//
+`timescale 1ns / 1ps
+
+module HalfAdder(SW0_P23, 
+                 SW1_P24, 
+                 LED0_P32, 
+                 LED1_P33);
+
+    input SW0_P23;
+    input SW1_P24;
+   output LED0_P32;
+   output LED1_P33;
+   
+   
+   AND2  XLXI_1 (.I0(SW1_P24), 
+                .I1(SW0_P23), 
+                .O(LED1_P33));
+   XOR2  XLXI_3 (.I0(SW0_P23), 
+                .I1(SW1_P24), 
+                .O(LED0_P32));
+endmodule

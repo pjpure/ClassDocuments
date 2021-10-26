@@ -1,0 +1,44 @@
+#-----------------------------------------------------------
+# PlanAhead v14.7 (64-bit)
+# Build 321239 by xbuild on Fri Sep 27 19:29:51 MDT 2013
+# Start of session at: Thu Sep 17 15:02:20 2020
+# Process ID: 2868
+# Log file: C:/.Xilinx/Lab4/planAhead_run_1/planAhead.log
+# Journal file: C:/.Xilinx/Lab4/planAhead_run_1/planAhead.jou
+#-----------------------------------------------------------
+start_gui
+source C:/.Xilinx/Lab4/pa.fromHdl.tcl
+update_compile_order -fileset sim_1
+startgroup
+set_property package_pin P48 [get_ports LED0_P48]
+endgroup
+startgroup
+set_property package_pin P33 [get_ports SW0_P33]
+endgroup
+startgroup
+set_property package_pin P34 [get_ports SW1_P34]
+endgroup
+set_property package_pin "" [get_ports [list  SW2_P36]]
+set_property package_pin "" [get_ports [list  SW2_P36]]
+startgroup
+set_property package_pin P33 [get_ports SW0_P33]
+endgroup
+startgroup
+set_property package_pin P83 [get_ports LED0_P48]
+endgroup
+startgroup
+set_property package_pin P66 [get_ports SW0_P33]
+endgroup
+startgroup
+set_property package_pin P62 [get_ports SW1_P34]
+endgroup
+startgroup
+set_property package_pin P61 [get_ports SW2_P36]
+endgroup
+startgroup
+set_property package_pin P59 [get_ports SW3_P37]
+endgroup
+startgroup
+set_property package_pin P58 [get_ports SW4_P38]
+endgroup
+save_constraints

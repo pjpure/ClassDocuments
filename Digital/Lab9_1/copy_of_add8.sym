@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<symbol version="7" name="add8">
+    <symboltype>BLOCK</symboltype>
+    <timestamp>2000-1-1T10:10:10</timestamp>
+    <attr value="ADD8_HXILINX" name="VeriModel" />
+    <attr value="Copy Of Symbol With Level: HXILINX" name="Level" />
+    <attr value="ADD8_HXILINX" name="VhdlModel" />
+    <attr value="2.0.0" name="Libver" />
+    <pin polarity="Input" x="0" y="-320" name="A(7:0)" />
+    <pin polarity="Input" x="0" y="-192" name="B(7:0)" />
+    <pin polarity="Input" x="0" y="-448" name="CI" />
+    <pin polarity="Output" x="448" y="-64" name="CO" />
+    <pin polarity="Output" x="448" y="-128" name="OFL" />
+    <pin polarity="Output" x="448" y="-256" name="S(7:0)" />
+    <graph>
+        <line x2="336" y1="-128" y2="-148" x1="336" />
+        <line x2="336" y1="-128" y2="-128" x1="384" />
+        <line x2="64" y1="-288" y2="-432" x1="64" />
+        <line x2="64" y1="-256" y2="-288" x1="128" />
+        <line x2="128" y1="-224" y2="-256" x1="64" />
+        <line x2="64" y1="-80" y2="-224" x1="64" />
+        <line x2="64" y1="-160" y2="-80" x1="384" />
+        <line x2="384" y1="-336" y2="-160" x1="384" />
+        <line x2="384" y1="-352" y2="-336" x1="384" />
+        <line x2="384" y1="-432" y2="-352" x1="64" />
+        <line x2="64" y1="-448" y2="-448" x1="128" />
+        <line x2="128" y1="-416" y2="-448" x1="128" />
+        <line x2="64" y1="-448" y2="-448" x1="0" />
+        <rect width="64" x="384" y="-268" height="24" />
+        <line x2="384" y1="-256" y2="-256" x1="448" />
+        <line x2="64" y1="-192" y2="-192" x1="0" />
+        <line x2="64" y1="-320" y2="-320" x1="0" />
+        <rect width="64" x="0" y="-332" height="24" />
+        <rect width="64" x="0" y="-204" height="24" />
+        <line x2="384" y1="-64" y2="-64" x1="240" />
+        <line x2="240" y1="-124" y2="-64" x1="240" />
+        <line x2="384" y1="-64" y2="-64" x1="448" />
+        <line x2="384" y1="-128" y2="-128" x1="448" />
+        <text style="alignment:RIGHT;fontsize:24;fontname:Arial" x="376" y="-256">S[7:0]</text>
+        <text style="fontsize:24;fontname:Arial" x="72" y="-192">B[7:0]</text>
+        <text style="fontsize:24;fontname:Arial" x="72" y="-320">A[7:0]</text>
+        <text style="alignment:CENTER;fontsize:24;fontname:Arial" x="128" y="-388">CI</text>
+        <text style="alignment:CENTER;fontsize:24;fontname:Arial" x="336" y="-176">OFL</text>
+        <text style="alignment:CENTER;fontsize:24;fontname:Arial" x="240" y="-148">CO</text>
+        <text style="alignment:CENTER;fontsize:56;fontname:Arial" x="268" y="-432">ADD8</text>
+    </graph>
+</symbol>

@@ -1,0 +1,66 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 14.7
+//  \   \         Application : sch2hdl
+//  /   /         Filename : shift.vf
+// /___/   /\     Timestamp : 11/05/2020 00:34:35
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: sch2hdl -intstyle ise -family spartan6 -verilog C:/.Xilinx/Lab9_1/shift.vf -w C:/.Xilinx/Lab9_1/shift.sch
+//Design Name: shift
+//Device: spartan6
+//Purpose:
+//    This verilog netlist is translated from an ECS schematic.It can be 
+//    synthesized and simulated, but it should not be modified. 
+//
+`timescale 1ns / 1ps
+
+module shift(In1, 
+             OutS);
+
+    input [7:0] In1;
+   output [7:0] OutS;
+   
+   wire XLXN_31;
+   wire XLXN_42;
+   wire XLXN_43;
+   wire XLXN_44;
+   wire XLXN_50;
+   wire XLXN_51;
+   wire XLXN_52;
+   
+   GND  XLXI_19 (.G(OutS[0]));
+   OR2  XLXI_21 (.I0(XLXN_31), 
+                .I1(In1[0]), 
+                .O(OutS[1]));
+   OR2  XLXI_22 (.I0(XLXN_42), 
+                .I1(In1[1]), 
+                .O(OutS[2]));
+   OR2  XLXI_23 (.I0(XLXN_43), 
+                .I1(In1[2]), 
+                .O(OutS[3]));
+   OR2  XLXI_24 (.I0(XLXN_44), 
+                .I1(In1[3]), 
+                .O(OutS[4]));
+   OR2  XLXI_25 (.I0(XLXN_50), 
+                .I1(In1[4]), 
+                .O(OutS[5]));
+   OR2  XLXI_26 (.I0(XLXN_51), 
+                .I1(In1[5]), 
+                .O(OutS[6]));
+   OR2  XLXI_27 (.I0(XLXN_52), 
+                .I1(In1[6]), 
+                .O(OutS[7]));
+   GND  XLXI_28 (.G(XLXN_31));
+   GND  XLXI_29 (.G(XLXN_42));
+   GND  XLXI_30 (.G(XLXN_43));
+   GND  XLXI_31 (.G(XLXN_44));
+   GND  XLXI_32 (.G(XLXN_50));
+   GND  XLXI_33 (.G(XLXN_51));
+   GND  XLXI_34 (.G(XLXN_52));
+endmodule

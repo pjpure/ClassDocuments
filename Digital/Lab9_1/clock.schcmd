@@ -1,0 +1,35 @@
+select figure at 504 1367 8 -branches -sn=1
+add autowire 848 1696 1280 1696 8 -sn=1
+add autowire 848 1760 1280 1760 8 -sn=1
+add autowire 832 1840 1280 1840 8 -sn=1
+add autowire 832 1920 1280 1920 8 -sn=1
+add iomarker 1280 1696 0 Unknown Unknown -sn=1
+add iomarker 1280 1760 0 Unknown Unknown -sn=1
+add iomarker 1280 1840 0 Unknown Unknown -sn=1
+add iomarker 1280 1920 0 Unknown Unknown -sn=1
+select figure at 1328 1702 8 -branches -sn=1
+select figure at 1328 1702 8 -branches -all -sn=1
+select figure at 1557 1983 8 -branches -sn=1
+select all in 694 1732 1557 1983 -branches -enclosed -sn=1
+select figure at 1422 1700 8 -branches -sn=1
+select figure at 1422 1700 8 -branches -all -sn=1
+select figure at 1495 2008 8 -branches -sn=1
+select all in 592 1734 1495 2008 -branches -enclosed -sn=1
+delete selection -sn=1
+select figure at 1359 1782 8 -branches -sn=1
+delete selection -sn=1
+select figure at 1330 1676 8 -branches -sn=1
+select figure at 1330 1676 8 -branches -all -sn=1
+undo
+undo
+select figure at 1268 1825 8 -branches -sn=1
+undo
+undo
+undo
+undo
+undo
+select figure at 1305 1680 8 -branches -sn=1
+select figure at 1305 1680 8 -branches -all -sn=1
+set attr NA|XLXN_15|Name value com0 -sn=1
+select figure at 1393 1750 8 -branches -sn=1
+select figure at 1393 1750 8 -branches -all -sn=1

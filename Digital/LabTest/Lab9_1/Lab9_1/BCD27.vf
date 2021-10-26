@@ -1,0 +1,242 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 14.7
+//  \   \         Application : sch2hdl
+//  /   /         Filename : BCD27.vf
+// /___/   /\     Timestamp : 11/04/2020 21:19:46
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: sch2hdl -intstyle ise -family spartan6 -verilog C:/.Xilinx/Lab9_1/BCD27.vf -w C:/.Xilinx/Lab9_1/BCD27.sch
+//Design Name: BCD27
+//Device: spartan6
+//Purpose:
+//    This verilog netlist is translated from an ECS schematic.It can be 
+//    synthesized and simulated, but it should not be modified. 
+//
+`timescale  100 ps / 10 ps
+
+module D4_16E_HXILINX_BCD27 (D0, D1, D2, D3, D4, D5, D6, D7, D8, D9, D10, D11, D12, D13, D14, D15, A0, A1, A2, A3, E);
+    
+
+   output D0;
+   output D1;
+   output D2;
+   output D3;
+   output D4;
+   output D5;
+   output D6;
+   output D7;
+   output D8;
+   output D9;
+   output D10;
+   output D11;
+   output D12;
+   output D13;
+   output D14;
+   output D15;
+
+   input  A0;
+   input  A1;
+   input  A2;
+   input  A3;
+   input  E;
+  
+   reg D0;
+   reg D1;
+   reg D2;
+   reg D3;
+   reg D4;
+   reg D5;
+   reg D6;
+   reg D7;
+   reg D8;
+   reg D9;
+   reg D10;
+   reg D11;
+   reg D12;
+   reg D13;
+   reg D14;
+   reg D15;
+
+      always @ (A0 or A1 or A2 or A3 or E)
+      begin
+         if(!E)
+           {D15, D14, D13, D12, D11, D10, D9, D8, D7, D6, D5, D4, D3, D2, D1, D0} <= 16'b0000_0000_0000_0000;
+        else
+        begin
+           case({A3,A2,A1,A0})
+             4'b0000 :  {D15, D14, D13, D12, D11, D10, D9, D8, D7, D6, D5, D4, D3, D2, D1, D0} <= 16'b0000_0000_0000_0001;
+             4'b0001 :  {D15, D14, D13, D12, D11, D10, D9, D8, D7, D6, D5, D4, D3, D2, D1, D0} <= 16'b0000_0000_0000_0010;
+             4'b0010 :  {D15, D14, D13, D12, D11, D10, D9, D8, D7, D6, D5, D4, D3, D2, D1, D0} <= 16'b0000_0000_0000_0100;
+             4'b0011 :  {D15, D14, D13, D12, D11, D10, D9, D8, D7, D6, D5, D4, D3, D2, D1, D0} <= 16'b0000_0000_0000_1000;
+             4'b0100 :  {D15, D14, D13, D12, D11, D10, D9, D8, D7, D6, D5, D4, D3, D2, D1, D0} <= 16'b0000_0000_0001_0000;
+             4'b0101 :  {D15, D14, D13, D12, D11, D10, D9, D8, D7, D6, D5, D4, D3, D2, D1, D0} <= 16'b0000_0000_0010_0000;
+             4'b0110 :  {D15, D14, D13, D12, D11, D10, D9, D8, D7, D6, D5, D4, D3, D2, D1, D0} <= 16'b0000_0000_0100_0000;
+             4'b0111 :  {D15, D14, D13, D12, D11, D10, D9, D8, D7, D6, D5, D4, D3, D2, D1, D0} <= 16'b0000_0000_1000_0000;
+             4'b1000 :  {D15, D14, D13, D12, D11, D10, D9, D8, D7, D6, D5, D4, D3, D2, D1, D0} <= 16'b0000_0001_0000_0000;
+             4'b1001 :  {D15, D14, D13, D12, D11, D10, D9, D8, D7, D6, D5, D4, D3, D2, D1, D0} <= 16'b0000_0010_0000_0000;
+             4'b1010 :  {D15, D14, D13, D12, D11, D10, D9, D8, D7, D6, D5, D4, D3, D2, D1, D0} <= 16'b0000_0100_0000_0000;
+             4'b1011 :  {D15, D14, D13, D12, D11, D10, D9, D8, D7, D6, D5, D4, D3, D2, D1, D0} <= 16'b0000_1000_0000_0000;
+             4'b1100 :  {D15, D14, D13, D12, D11, D10, D9, D8, D7, D6, D5, D4, D3, D2, D1, D0} <= 16'b0001_0000_0000_0000;
+             4'b1101 :  {D15, D14, D13, D12, D11, D10, D9, D8, D7, D6, D5, D4, D3, D2, D1, D0} <= 16'b0010_0000_0000_0000;
+             4'b1110 :  {D15, D14, D13, D12, D11, D10, D9, D8, D7, D6, D5, D4, D3, D2, D1, D0} <= 16'b0100_0000_0000_0000;
+             4'b1111 :  {D15, D14, D13, D12, D11, D10, D9, D8, D7, D6, D5, D4, D3, D2, D1, D0} <= 16'b1000_0000_0000_0000;
+          endcase
+        end
+     end 
+
+endmodule
+`timescale  100 ps / 10 ps
+
+module OR6_HXILINX_BCD27 (O, I0, I1, I2, I3, I4, I5);
+    
+
+   output O;
+
+   input I0;
+   input I1;
+   input I2;
+   input I3;
+   input I4;
+   input I5;
+
+assign O = (I0 || I1 || I2 || I3 || I4 || I5);
+
+endmodule
+`timescale 1ns / 1ps
+
+module BCD27(Bit_0, 
+             Bit_1, 
+             Bit_2, 
+             Bit_3, 
+             A_7, 
+             B_7, 
+             C_7, 
+             D_7, 
+             E_7, 
+             F_7, 
+             G_7);
+
+    input Bit_0;
+    input Bit_1;
+    input Bit_2;
+    input Bit_3;
+   output A_7;
+   output B_7;
+   output C_7;
+   output D_7;
+   output E_7;
+   output F_7;
+   output G_7;
+   
+   wire A;
+   wire B;
+   wire C;
+   wire D0;
+   wire D1;
+   wire D2;
+   wire D3;
+   wire D4;
+   wire D5;
+   wire D6;
+   wire D7;
+   wire D8;
+   wire D9;
+   wire D10;
+   wire D11;
+   wire D12;
+   wire D13;
+   wire D14;
+   wire D15;
+   wire E;
+   wire F;
+   wire G;
+   wire XLXN_37;
+   wire XLXN_38;
+   
+   (* HU_SET = "XLXI_1_0" *) 
+   D4_16E_HXILINX_BCD27  XLXI_1 (.A0(Bit_0), 
+                                .A1(Bit_1), 
+                                .A2(Bit_2), 
+                                .A3(Bit_3), 
+                                .E(XLXN_37), 
+                                .D0(D0), 
+                                .D1(D1), 
+                                .D2(D2), 
+                                .D3(D3), 
+                                .D4(D4), 
+                                .D5(D5), 
+                                .D6(D6), 
+                                .D7(D7), 
+                                .D8(D8), 
+                                .D9(D9), 
+                                .D10(D10), 
+                                .D11(D11), 
+                                .D12(D12), 
+                                .D13(D13), 
+                                .D14(D14), 
+                                .D15(D15));
+   OR4  XLXI_25 (.I0(D12), 
+                .I1(D7), 
+                .I2(D1), 
+                .I3(D0), 
+                .O(G));
+   OR5  XLXI_26 (.I0(D13), 
+                .I1(D7), 
+                .I2(D3), 
+                .I3(D2), 
+                .I4(D1), 
+                .O(F));
+   (* HU_SET = "XLXI_27_1" *) 
+   OR6_HXILINX_BCD27  XLXI_27 (.I0(D9), 
+                              .I1(D7), 
+                              .I2(D5), 
+                              .I3(D4), 
+                              .I4(D3), 
+                              .I5(D1), 
+                              .O(E));
+   OR4  XLXI_31 (.I0(D11), 
+                .I1(D13), 
+                .I2(D4), 
+                .I3(D1), 
+                .O(A));
+   VCC  XLXI_32 (.P(XLXN_37));
+   INV  XLXI_33 (.I(G), 
+                .O(G_7));
+   INV  XLXI_34 (.I(F), 
+                .O(F_7));
+   INV  XLXI_35 (.I(E), 
+                .O(E_7));
+   INV  XLXI_36 (.I(XLXN_38), 
+                .O(D_7));
+   INV  XLXI_37 (.I(C), 
+                .O(C_7));
+   INV  XLXI_38 (.I(B), 
+                .O(B_7));
+   INV  XLXI_39 (.I(A), 
+                .O(A_7));
+   OR5  XLXI_40 (.I0(D15), 
+                .I1(D10), 
+                .I2(D7), 
+                .I3(D4), 
+                .I4(D1), 
+                .O(XLXN_38));
+   OR4  XLXI_41 (.I0(D15), 
+                .I1(D14), 
+                .I2(D12), 
+                .I3(D2), 
+                .O(C));
+   (* HU_SET = "XLXI_43_2" *) 
+   OR6_HXILINX_BCD27  XLXI_43 (.I0(D15), 
+                              .I1(D14), 
+                              .I2(D12), 
+                              .I3(D11), 
+                              .I4(D6), 
+                              .I5(D5), 
+                              .O(B));
+endmodule

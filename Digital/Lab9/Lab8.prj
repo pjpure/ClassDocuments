@@ -1,0 +1,8 @@
+verilog work "fullAdder.vf"
+verilog work "div2.vf"
+verilog work "Sum.vf"
+verilog work "selectCommon.vf"
+verilog work "mux16_4.vf"
+verilog work "DIV.vf"
+verilog work "BCD27.vf"
+verilog work "Lab8.vf"

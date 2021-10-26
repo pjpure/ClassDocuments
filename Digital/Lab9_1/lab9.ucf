@@ -1,0 +1,39 @@
+NET "PB1" CLOCK_DEDICATED_ROUTE = FALSE;
+NET "DP[8]" LOC = P99;
+NET "DP[7]" LOC = P100;
+NET "DP[6]" LOC = P101;
+NET "DP[5]" LOC = P102;
+NET "DP[4]" LOC = P104;
+NET "DP[3]" LOC = P105;
+NET "DP[2]" LOC = P111;
+NET "DP[1]" LOC = P112;
+NET "SW[0]" LOC = P66;
+NET "SW[1]" LOC = P62;
+NET "SW[2]" LOC = P61;
+NET "SW[3]" LOC = P59;
+NET "SW[4]" LOC = P58;
+NET "SW[5]" LOC = P57;
+NET "SW[6]" LOC = P56;
+NET "SW[7]" LOC = P55;
+NET "a" LOC = P41;
+NET "b" LOC = P40;
+NET "c" LOC = P35;
+NET "clock" LOC = P123;
+NET "com0" LOC = P44;
+NET "com1" LOC = P43;
+NET "com2" LOC = P33;
+NET "com3" LOC = P30;
+NET "d" LOC = P34;
+NET "e" LOC = P32;
+NET "f" LOC = P29;
+NET "g" LOC = P27;
+
+
+NET "PB1" LOC = P45;
+
+# PlanAhead Generated physical constraints 
+
+NET "MN7" LOC = P84;
+NET "MN6" LOC = P87;
+NET "MN5" LOC = P85;
+NET "MN4" LOC = P88;

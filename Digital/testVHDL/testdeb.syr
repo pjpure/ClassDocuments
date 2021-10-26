@@ -1,0 +1,556 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.11 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.11 secs
+ 
+--> Reading design: testdeb.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "testdeb.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "testdeb"
+Output Format                      : NGC
+Target Device                      : xc6slx9-3-tqg144
+
+---- Source Options
+Top Module Name                    : testdeb
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 16
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Parsing VHDL file "C:\.Xilinx\testVHDL\debounce.vhd" into library work
+Parsing entity <debounce>.
+Parsing architecture <BHV> of entity <debounce>.
+Parsing VHDL file "C:\.Xilinx\testVHDL\counter.vhd" into library work
+Parsing entity <counter>.
+Parsing architecture <archi> of entity <counter>.
+Parsing VHDL file "C:\.Xilinx\testVHDL\clockDIV.vhd" into library work
+Parsing entity <Clock_Divider>.
+Parsing architecture <bhv> of entity <clock_divider>.
+Parsing VHDL file "C:\.Xilinx\testVHDL\testdeb.vhf" into library work
+Parsing entity <testdeb>.
+Parsing architecture <BEHAVIORAL> of entity <testdeb>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating entity <testdeb> (architecture <BEHAVIORAL>) from library <work>.
+
+Elaborating entity <debounce> (architecture <BHV>) from library <work>.
+WARNING:HDLCompiler:92 - "C:\.Xilinx\testVHDL\debounce.vhd" Line 50: sw should be on the sensitivity list of the process
+
+Elaborating entity <Clock_Divider> (architecture <bhv>) from library <work>.
+WARNING:HDLCompiler:92 - "C:\.Xilinx\testVHDL\clockDIV.vhd" Line 29: tmp should be on the sensitivity list of the process
+
+Elaborating entity <counter> (architecture <archi>) from library <work>.
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <testdeb>.
+    Related source file is "C:\.Xilinx\testVHDL\testdeb.vhf".
+    Summary:
+	no macro.
+Unit <testdeb> synthesized.
+
+Synthesizing Unit <debounce>.
+    Related source file is "C:\.Xilinx\testVHDL\debounce.vhd".
+    Found 4-bit register for signal <tmp>.
+    Found 1-bit register for signal <o>.
+    Found 4-bit adder for signal <tmp[3]_GND_8_o_add_1_OUT> created at line 47.
+    Found 4-bit comparator greater for signal <tmp[3]_PWR_8_o_LessThan_1_o> created at line 45
+    Found 4-bit comparator greater for signal <GND_8_o_tmp[3]_LessThan_5_o> created at line 50
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred   5 D-type flip-flop(s).
+	inferred   2 Comparator(s).
+Unit <debounce> synthesized.
+
+Synthesizing Unit <Clock_Divider>.
+    Related source file is "C:\.Xilinx\testVHDL\clockDIV.vhd".
+    Found 32-bit register for signal <count>.
+    Found 1-bit register for signal <tmp>.
+    Found 32-bit adder for signal <count[31]_GND_10_o_add_0_OUT> created at line 23.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred  33 D-type flip-flop(s).
+	inferred   1 Multiplexer(s).
+Unit <Clock_Divider> synthesized.
+
+Synthesizing Unit <counter>.
+    Related source file is "C:\.Xilinx\testVHDL\counter.vhd".
+    Found 6-bit register for signal <tmp>.
+    Found 6-bit adder for signal <tmp[5]_GND_12_o_add_0_OUT> created at line 31.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred   6 D-type flip-flop(s).
+Unit <counter> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 3
+ 32-bit adder                                          : 1
+ 4-bit adder                                           : 1
+ 6-bit adder                                           : 1
+# Registers                                            : 5
+ 1-bit register                                        : 2
+ 32-bit register                                       : 1
+ 4-bit register                                        : 1
+ 6-bit register                                        : 1
+# Comparators                                          : 2
+ 4-bit comparator greater                              : 2
+# Multiplexers                                         : 1
+ 32-bit 2-to-1 multiplexer                             : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+Synthesizing (advanced) Unit <counter>.
+The following registers are absorbed into counter <tmp>: 1 register on signal <tmp>.
+Unit <counter> synthesized (advanced).
+
+Synthesizing (advanced) Unit <debounce>.
+The following registers are absorbed into counter <tmp>: 1 register on signal <tmp>.
+Unit <debounce> synthesized (advanced).
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 1
+ 32-bit adder                                          : 1
+# Counters                                             : 2
+ 4-bit up counter                                      : 1
+ 6-bit up counter                                      : 1
+# Registers                                            : 34
+ Flip-Flops                                            : 34
+# Comparators                                          : 2
+ 4-bit comparator greater                              : 2
+# Multiplexers                                         : 1
+ 32-bit 2-to-1 multiplexer                             : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+WARNING:Xst:3002 - This design contains one or more registers/latches that are directly
+   incompatible with the Spartan6 architecture. The two primary causes of this is
+   either a register or latch described with both an asynchronous set and
+   asynchronous reset, or a register or latch described with an asynchronous
+   set or reset which however has an initialization value of the opposite 
+   polarity (i.e. asynchronous reset with an initialization value of 1).
+    While this circuit can be built, it creates a sub-optimal implementation
+   in terms of area, power and performance. For a more optimal implementation
+   Xilinx highly recommends one of the following:
+
+          1) Remove either the set or reset from all registers and latches
+             if not needed for required functionality
+          2) Modify the code in order to produce a synchronous set
+             and/or reset (both is preferred)
+          3) Ensure all registers have the same initialization value as the
+             described asynchronous set or reset polarity
+          4) Use the -async_to_sync option to transform the asynchronous
+             set/reset to synchronous operation
+             (timing simulation highly recommended when using this option)
+
+  Please refer to http://www.xilinx.com search string "Spartan6 asynchronous set/reset" for more details.
+
+  List of register instances with asynchronous set or reset and opposite initialization value:
+    XLXI_1/o in unit <testdeb>
+
+
+Optimizing unit <testdeb> ...
+
+Optimizing unit <Clock_Divider> ...
+WARNING:Xst:1293 - FF/Latch <XLXI_2/count_31> has a constant value of 0 in block <testdeb>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <XLXI_2/count_30> has a constant value of 0 in block <testdeb>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <XLXI_2/count_29> has a constant value of 0 in block <testdeb>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <XLXI_2/count_28> has a constant value of 0 in block <testdeb>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <XLXI_2/count_27> has a constant value of 0 in block <testdeb>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <XLXI_2/count_26> has a constant value of 0 in block <testdeb>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <XLXI_2/count_25> has a constant value of 0 in block <testdeb>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <XLXI_2/count_24> has a constant value of 0 in block <testdeb>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <XLXI_2/count_23> has a constant value of 0 in block <testdeb>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <XLXI_2/count_22> has a constant value of 0 in block <testdeb>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <XLXI_2/count_21> has a constant value of 0 in block <testdeb>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <XLXI_2/count_20> has a constant value of 0 in block <testdeb>. This FF/Latch will be trimmed during the optimization process.
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block testdeb, actual ratio is 1.
+WARNING:Xst:1426 - The value init of the FF/Latch XLXI_1/o_LD hinder the constant cleaning in the block testdeb.
+   You should achieve better results by setting this init to 1.
+FlipFlop XLXI_2/count_16 has been replicated 1 time(s)
+FlipFlop XLXI_2/count_17 has been replicated 1 time(s)
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 34
+ Flip-Flops                                            : 34
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : testdeb.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 102
+#      GND                         : 1
+#      INV                         : 4
+#      LUT1                        : 19
+#      LUT2                        : 3
+#      LUT3                        : 2
+#      LUT4                        : 2
+#      LUT5                        : 2
+#      LUT6                        : 29
+#      MUXCY                       : 19
+#      VCC                         : 1
+#      XORCY                       : 20
+# FlipFlops/Latches                : 35
+#      FD                          : 29
+#      FDCE                        : 4
+#      FDPE                        : 1
+#      LD                          : 1
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 7
+#      IBUF                        : 1
+#      OBUF                        : 6
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 6slx9tqg144-3 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:              35  out of  11440     0%  
+ Number of Slice LUTs:                   61  out of   5720     1%  
+    Number used as Logic:                61  out of   5720     1%  
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:     64
+   Number with an unused Flip Flop:      29  out of     64    45%  
+   Number with an unused LUT:             3  out of     64     4%  
+   Number of fully used LUT-FF pairs:    32  out of     64    50%  
+   Number of unique control sets:         4
+
+IO Utilization: 
+ Number of IOs:                           8
+ Number of bonded IOBs:                   8  out of    102     7%  
+
+Specific Feature Utilization:
+ Number of BUFG/BUFGCTRLs:                1  out of     16     6%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-------------------------------------------------------+------------------------+-------+
+Clock Signal                                           | Clock buffer(FF name)  | Load  |
+-------------------------------------------------------+------------------------+-------+
+XLXI_2/tmp                                             | NONE(XLXI_1/tmp_0)     | 5     |
+XLXI_1/sw_GND_8_o_AND_1_o(XLXI_1/sw_GND_8_o_AND_1_o1:O)| NONE(*)(XLXI_1/o_LD)   | 1     |
+XLXN_5_inv(XLXN_5_inv1:O)                              | NONE(*)(XLXI_4/tmp_0)  | 6     |
+clockP123                                              | BUFGP                  | 23    |
+-------------------------------------------------------+------------------------+-------+
+(*) These 2 clock signal(s) are generated by combinatorial logic,
+and XST is not able to identify which are the primary clock signals.
+Please use the CLOCK_SIGNAL constraint to specify the clock signal(s) generated by combinatorial logic.
+INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -3
+
+   Minimum period: 3.084ns (Maximum Frequency: 324.302MHz)
+   Minimum input arrival time before clock: 3.523ns
+   Maximum output required time after clock: 3.791ns
+   Maximum combinational path delay: No path found
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'XLXI_2/tmp'
+  Clock period: 2.722ns (frequency: 367.377MHz)
+  Total number of paths / destination ports: 35 / 14
+-------------------------------------------------------------------------
+Delay:               2.722ns (Levels of Logic = 1)
+  Source:            XLXI_1/tmp_3 (FF)
+  Destination:       XLXI_1/tmp_0 (FF)
+  Source Clock:      XLXI_2/tmp rising
+  Destination Clock: XLXI_2/tmp rising
+
+  Data Path: XLXI_1/tmp_3 to XLXI_1/tmp_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDCE:C->Q             3   0.447   0.898  XLXI_1/tmp_3 (XLXI_1/tmp_3)
+     LUT5:I1->O            6   0.203   0.744  XLXI_1/sw_GND_8_o_AND_1_o1 (XLXI_1/sw_GND_8_o_AND_1_o)
+     FDCE:CLR                  0.430          XLXI_1/tmp_0
+    ----------------------------------------
+    Total                      2.722ns (1.080ns logic, 1.642ns route)
+                                       (39.7% logic, 60.3% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'XLXN_5_inv'
+  Clock period: 2.106ns (frequency: 474.721MHz)
+  Total number of paths / destination ports: 21 / 6
+-------------------------------------------------------------------------
+Delay:               2.106ns (Levels of Logic = 1)
+  Source:            XLXI_4/tmp_0 (FF)
+  Destination:       XLXI_4/tmp_0 (FF)
+  Source Clock:      XLXN_5_inv rising
+  Destination Clock: XLXN_5_inv rising
+
+  Data Path: XLXI_4/tmp_0 to XLXI_4/tmp_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q               7   0.447   0.773  XLXI_4/tmp_0 (XLXI_4/tmp_0)
+     INV:I->O              1   0.206   0.579  XLXI_4/Mcount_tmp_xor<0>11_INV_0 (Result<0>)
+     FD:D                      0.102          XLXI_4/tmp_0
+    ----------------------------------------
+    Total                      2.106ns (0.755ns logic, 1.352ns route)
+                                       (35.8% logic, 64.2% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clockP123'
+  Clock period: 3.084ns (frequency: 324.302MHz)
+  Total number of paths / destination ports: 706 / 23
+-------------------------------------------------------------------------
+Delay:               3.084ns (Levels of Logic = 2)
+  Source:            XLXI_2/count_1 (FF)
+  Destination:       XLXI_2/count_10 (FF)
+  Source Clock:      clockP123 rising
+  Destination Clock: clockP123 rising
+
+  Data Path: XLXI_2/count_1 to XLXI_2/count_10
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q               3   0.447   1.015  XLXI_2/count_1 (XLXI_2/count_1)
+     LUT6:I0->O           11   0.203   1.111  XLXI_2/GND_10_o_count[31]_equal_2_o<31>2 (XLXI_2/GND_10_o_count[31]_equal_2_o<31>1)
+     LUT6:I3->O            1   0.205   0.000  XLXI_2/Mmux_count[31]_GND_10_o_mux_2_OUT13 (XLXI_2/count[31]_GND_10_o_mux_2_OUT<0>)
+     FD:D                      0.102          XLXI_2/count_0
+    ----------------------------------------
+    Total                      3.084ns (0.957ns logic, 2.127ns route)
+                                       (31.0% logic, 69.0% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'XLXI_2/tmp'
+  Total number of paths / destination ports: 5 / 5
+-------------------------------------------------------------------------
+Offset:              3.523ns (Levels of Logic = 2)
+  Source:            sw (PAD)
+  Destination:       XLXI_1/tmp_0 (FF)
+  Destination Clock: XLXI_2/tmp rising
+
+  Data Path: sw to XLXI_1/tmp_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             1   1.222   0.924  sw_IBUF (sw_IBUF)
+     LUT5:I0->O            6   0.203   0.744  XLXI_1/sw_GND_8_o_AND_1_o1 (XLXI_1/sw_GND_8_o_AND_1_o)
+     FDCE:CLR                  0.430          XLXI_1/tmp_0
+    ----------------------------------------
+    Total                      3.523ns (1.855ns logic, 1.668ns route)
+                                       (52.7% logic, 47.3% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'XLXN_5_inv'
+  Total number of paths / destination ports: 6 / 6
+-------------------------------------------------------------------------
+Offset:              3.791ns (Levels of Logic = 1)
+  Source:            XLXI_4/tmp_0 (FF)
+  Destination:       MN<0> (PAD)
+  Source Clock:      XLXN_5_inv rising
+
+  Data Path: XLXI_4/tmp_0 to MN<0>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q               7   0.447   0.773  XLXI_4/tmp_0 (XLXI_4/tmp_0)
+     OBUF:I->O                 2.571          MN_0_OBUF (MN<0>)
+    ----------------------------------------
+    Total                      3.791ns (3.018ns logic, 0.773ns route)
+                                       (79.6% logic, 20.4% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+Clock to Setup on destination clock XLXI_2/tmp
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+XLXI_2/tmp     |    2.722|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock XLXN_5_inv
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+XLXN_5_inv     |    2.106|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock clockP123
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clockP123      |    3.084|         |         |         |
+---------------+---------+---------+---------+---------+
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 5.00 secs
+Total CPU time to Xst completion: 4.26 secs
+ 
+--> 
+
+Total memory usage is 4511332 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :   16 (   0 filtered)
+Number of infos    :    1 (   0 filtered)
+

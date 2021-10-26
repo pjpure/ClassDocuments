@@ -1,0 +1,3 @@
+verilog work "nub15.vf"
+verilog work "BCD27.vf"
+verilog work "test7seg.vf"

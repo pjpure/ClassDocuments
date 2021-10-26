@@ -1,0 +1,10 @@
+
+NET "SW" CLOCK_DEDICATED_ROUTE = FALSE;
+# PlanAhead Generated physical constraints 
+NET "SW" LOC = P45;
+NET "MN[5]" LOC = P87;
+NET "MN[4]" LOC = P88;
+NET "MN[3]" LOC = P92;
+NET "MN[2]" LOC = P93;
+NET "MN[1]" LOC = P94;
+NET "MN[0]" LOC = P95;

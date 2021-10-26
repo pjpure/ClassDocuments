@@ -1,0 +1,3 @@
+xst -intstyle ise -ifn "C:/.Xilinx/Lab9/test.xst" -ofn "C:/.Xilinx/Lab9/test.syr" 
+xst -intstyle ise -ifn "C:/.Xilinx/Lab9/test.xst" -ofn "C:/.Xilinx/Lab9/test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc test.ucf -p xc6slx9-tqg144-3 test.ngc test.ngd  

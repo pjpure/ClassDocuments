@@ -1,0 +1,452 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.11 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.11 secs
+ 
+--> Reading design: testdde.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "testdde.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "testdde"
+Output Format                      : NGC
+Target Device                      : xc6slx9-3-tqg144
+
+---- Source Options
+Top Module Name                    : testdde
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 16
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Analyzing Verilog file "C:\.Xilinx\test\nub15.vf" into library work
+Parsing module <FJKC_HXILINX_nub15>.
+Parsing module <nub15>.
+Analyzing Verilog file "C:\.Xilinx\test\BCD27.vf" into library work
+Parsing module <D4_16E_HXILINX_BCD27>.
+Parsing module <OR6_HXILINX_BCD27>.
+Parsing module <BCD27>.
+Analyzing Verilog file "C:\.Xilinx\test\testdde.vf" into library work
+Parsing module <D4_16E_HXILINX_testdde>.
+Parsing module <OR6_HXILINX_testdde>.
+Parsing module <FJKC_HXILINX_testdde>.
+Parsing module <nub15_MUSER_testdde>.
+Parsing module <BCD27_MUSER_testdde>.
+Parsing module <testdde>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating module <testdde>.
+
+Elaborating module <BCD27_MUSER_testdde>.
+
+Elaborating module <D4_16E_HXILINX_testdde>.
+WARNING:HDLCompiler:1127 - "C:\.Xilinx\test\testdde.vf" Line 269: Assignment to D8 ignored, since the identifier is never used
+
+Elaborating module <OR4>.
+
+Elaborating module <OR5>.
+
+Elaborating module <OR6_HXILINX_testdde>.
+
+Elaborating module <VCC>.
+
+Elaborating module <INV>.
+
+Elaborating module <OR3>.
+
+Elaborating module <AND2>.
+
+Elaborating module <OBUF>.
+
+Elaborating module <nub15_MUSER_testdde>.
+
+Elaborating module <FJKC_HXILINX_testdde>.
+
+Elaborating module <GND>.
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <testdde>.
+    Related source file is "C:\.Xilinx\test\testdde.vf".
+    Set property "IOSTANDARD = DEFAULT" for instance <XLXI_13>.
+    Set property "SLEW = SLOW" for instance <XLXI_13>.
+    Set property "DRIVE = 12" for instance <XLXI_13>.
+    Set property "IOSTANDARD = DEFAULT" for instance <XLXI_14>.
+    Set property "SLEW = SLOW" for instance <XLXI_14>.
+    Set property "DRIVE = 12" for instance <XLXI_14>.
+    Set property "IOSTANDARD = DEFAULT" for instance <XLXI_15>.
+    Set property "SLEW = SLOW" for instance <XLXI_15>.
+    Set property "DRIVE = 12" for instance <XLXI_15>.
+    Summary:
+	no macro.
+Unit <testdde> synthesized.
+
+Synthesizing Unit <BCD27_MUSER_testdde>.
+    Related source file is "C:\.Xilinx\test\testdde.vf".
+    Set property "HU_SET = XLXI_1_6" for instance <XLXI_1>.
+    Set property "HU_SET = XLXI_27_7" for instance <XLXI_27>.
+    Set property "HU_SET = XLXI_43_8" for instance <XLXI_43>.
+INFO:Xst:3210 - "C:\.Xilinx\test\testdde.vf" line 256: Output port <D8> of the instance <XLXI_1> is unconnected or connected to loadless signal.
+    Summary:
+	no macro.
+Unit <BCD27_MUSER_testdde> synthesized.
+
+Synthesizing Unit <D4_16E_HXILINX_testdde>.
+    Related source file is "C:\.Xilinx\test\testdde.vf".
+    Summary:
+	inferred  16 Multiplexer(s).
+Unit <D4_16E_HXILINX_testdde> synthesized.
+
+Synthesizing Unit <OR6_HXILINX_testdde>.
+    Related source file is "C:\.Xilinx\test\testdde.vf".
+    Summary:
+	no macro.
+Unit <OR6_HXILINX_testdde> synthesized.
+
+Synthesizing Unit <nub15_MUSER_testdde>.
+    Related source file is "C:\.Xilinx\test\testdde.vf".
+    Set property "HU_SET = XLXI_1_3" for instance <XLXI_1>.
+    Set property "HU_SET = XLXI_2_4" for instance <XLXI_2>.
+    Set property "HU_SET = XLXI_3_5" for instance <XLXI_3>.
+    Summary:
+	no macro.
+Unit <nub15_MUSER_testdde> synthesized.
+
+Synthesizing Unit <FJKC_HXILINX_testdde>.
+    Related source file is "C:\.Xilinx\test\testdde.vf".
+        INIT = 1'b0
+    Found 1-bit register for signal <Q>.
+    Summary:
+	inferred   1 D-type flip-flop(s).
+	inferred   2 Multiplexer(s).
+Unit <FJKC_HXILINX_testdde> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Registers                                            : 3
+ 1-bit register                                        : 3
+# Multiplexers                                         : 22
+ 1-bit 2-to-1 multiplexer                              : 22
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Registers                                            : 3
+ Flip-Flops                                            : 3
+# Multiplexers                                         : 22
+ 1-bit 2-to-1 multiplexer                              : 22
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <testdde> ...
+
+Optimizing unit <BCD27_MUSER_testdde> ...
+
+Optimizing unit <FJKC_HXILINX_testdde> ...
+
+Optimizing unit <D4_16E_HXILINX_testdde> ...
+
+Optimizing unit <OR6_HXILINX_testdde> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block testdde, actual ratio is 0.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 3
+ Flip-Flops                                            : 3
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : testdde.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 37
+#      AND2                        : 4
+#      GND                         : 2
+#      INV                         : 10
+#      LUT2                        : 3
+#      LUT3                        : 10
+#      LUT5                        : 1
+#      OR3                         : 1
+#      OR4                         : 3
+#      OR5                         : 2
+#      VCC                         : 1
+# FlipFlops/Latches                : 3
+#      FDC                         : 2
+#      FDCE                        : 1
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 12
+#      OBUF                        : 12
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 6slx9tqg144-3 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:               3  out of  11440     0%  
+ Number of Slice LUTs:                   24  out of   5720     0%  
+    Number used as Logic:                24  out of   5720     0%  
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:     27
+   Number with an unused Flip Flop:      24  out of     27    88%  
+   Number with an unused LUT:             3  out of     27    11%  
+   Number of fully used LUT-FF pairs:     0  out of     27     0%  
+   Number of unique control sets:         3
+
+IO Utilization: 
+ Number of IOs:                          13
+ Number of bonded IOBs:                  13  out of    102    12%  
+
+Specific Feature Utilization:
+ Number of BUFG/BUFGCTRLs:                1  out of     16     6%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+sw                                 | BUFGP                  | 3     |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -3
+
+   Minimum period: 3.981ns (Maximum Frequency: 251.184MHz)
+   Minimum input arrival time before clock: No path found
+   Maximum output required time after clock: 7.464ns
+   Maximum combinational path delay: No path found
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'sw'
+  Clock period: 3.981ns (frequency: 251.184MHz)
+  Total number of paths / destination ports: 13 / 4
+-------------------------------------------------------------------------
+Delay:               3.981ns (Levels of Logic = 4)
+  Source:            XLXI_22/XLXI_1/Q (FF)
+  Destination:       XLXI_22/XLXI_2/Q (FF)
+  Source Clock:      sw rising
+  Destination Clock: sw rising
+
+  Data Path: XLXI_22/XLXI_1/Q to XLXI_22/XLXI_2/Q
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDCE:C->Q            13   0.447   0.932  Q (Q)
+     end scope: 'XLXI_22/XLXI_1:Q'
+     INV:I->O              1   0.568   0.924  XLXI_22/XLXI_6 (XLXI_22/XLXN_12)
+     AND2:I1->O            1   0.223   0.580  XLXI_22/XLXI_5 (XLXI_22/XLXN_10)
+     begin scope: 'XLXI_22/XLXI_2:J'
+     LUT3:I2->O            1   0.205   0.000  Q_rstpot (Q_rstpot)
+     FDC:D                     0.102          Q
+    ----------------------------------------
+    Total                      3.981ns (1.545ns logic, 2.436ns route)
+                                       (38.8% logic, 61.2% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'sw'
+  Total number of paths / destination ports: 65 / 9
+-------------------------------------------------------------------------
+Offset:              7.464ns (Levels of Logic = 6)
+  Source:            XLXI_22/XLXI_3/Q (FF)
+  Destination:       a (PAD)
+  Source Clock:      sw rising
+
+  Data Path: XLXI_22/XLXI_3/Q to a
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q             16   0.447   1.233  Q (Q)
+     end scope: 'XLXI_22/XLXI_3:Q'
+     begin scope: 'XLXI_1/XLXI_1:A0'
+     LUT3:I0->O            5   0.205   0.962  Mmux_D1111 (D1)
+     end scope: 'XLXI_1/XLXI_1:D1'
+     OR4:I2->O             1   0.320   0.579  XLXI_1/XLXI_25 (XLXI_1/G)
+     INV:I->O              1   0.568   0.579  XLXI_1/XLXI_33 (g_OBUF)
+     OBUF:I->O                 2.571          g_OBUF (g)
+    ----------------------------------------
+    Total                      7.464ns (4.111ns logic, 3.353ns route)
+                                       (55.1% logic, 44.9% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+Clock to Setup on destination clock sw
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+sw             |    3.981|         |         |         |
+---------------+---------+---------+---------+---------+
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 4.00 secs
+Total CPU time to Xst completion: 4.11 secs
+ 
+--> 
+
+Total memory usage is 4495140 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    1 (   0 filtered)
+Number of infos    :    1 (   0 filtered)
+

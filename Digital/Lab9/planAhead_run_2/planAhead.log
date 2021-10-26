@@ -1,0 +1,165 @@
+#-----------------------------------------------------------
+# PlanAhead v14.7 (64-bit)
+# Build 321239 by xbuild on Fri Sep 27 19:29:51 MDT 2013
+# Start of session at: Wed Nov 04 19:50:52 2020
+# Process ID: 9664
+# Log file: C:/.Xilinx/Lab9/planAhead_run_2/planAhead.log
+# Journal file: C:/.Xilinx/Lab9/planAhead_run_2/planAhead.jou
+#-----------------------------------------------------------
+INFO: [Common 17-78] Attempting to get a license: PlanAhead
+INFO: [Common 17-290] Got license for PlanAhead
+INFO: [Device 21-36] Loading parts and site information from C:/Xilinx/14.7/ISE_DS/PlanAhead/data/parts/arch.xml
+Parsing RTL primitives file [C:/Xilinx/14.7/ISE_DS/PlanAhead/data/parts/xilinx/rtl/prims/rtl_prims.xml]
+Finished parsing RTL primitives file [C:/Xilinx/14.7/ISE_DS/PlanAhead/data/parts/xilinx/rtl/prims/rtl_prims.xml]
+start_gui
+source C:/.Xilinx/Lab9/pa.fromHdl.tcl
+# create_project -name lab8 -dir "C:/.Xilinx/Lab9/planAhead_run_2" -part xc6slx9tqg144-3
+# set_param project.pinAheadLayout yes
+# set srcset [get_property srcset [current_run -impl]]
+# set_property target_constrs_file "lab9.ucf" [current_fileset -constrset]
+Adding file 'C:/.Xilinx/Lab9/lab9.ucf' to fileset 'constrs_1'
+# set hdlfile [add_files [list {div2.vf}]]
+# set_property file_type Verilog $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {selectCommon.vf}]]
+# set_property file_type Verilog $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {Mux16.vf}]]
+# set_property file_type Verilog $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {input2.vf}]]
+# set_property file_type Verilog $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {input1.vf}]]
+# set_property file_type Verilog $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {DIV.vf}]]
+# set_property file_type Verilog $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {BCD27.vf}]]
+# set_property file_type Verilog $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {Lab9.vf}]]
+# set_property file_type Verilog $hdlfile
+# set_property library work $hdlfile
+# set_property top Lab9 $srcset
+# add_files [list {lab9.ucf}] -fileset [get_property constrset [current_run]]
+# open_rtl_design -part xc6slx9tqg144-3
+Using Verific elaboration
+Parsing VHDL file "C:/Xilinx/14.7/ISE_DS/PlanAhead/data/parts/xilinx/rtl/lib/synplify/synattr.vhd" into library synplify
+Analyzing Verilog file "C:/.Xilinx/Lab9/Lab9.vf" into library work
+Loading clock regions from C:/Xilinx/14.7/ISE_DS/PlanAhead/data\parts/xilinx/spartan6/spartan6lx/xc6slx9/ClockRegion.xml
+Loading clock buffers from C:/Xilinx/14.7/ISE_DS/PlanAhead/data\parts/xilinx/spartan6/spartan6lx/xc6slx9/ClockBuffers.xml
+Loading package pin functions from C:/Xilinx/14.7/ISE_DS/PlanAhead/data\parts/xilinx/spartan6/PinFunctions.xml...
+Loading package from C:/Xilinx/14.7/ISE_DS/PlanAhead/data\parts/xilinx/spartan6/spartan6lx/xc6slx9/tqg144/Package.xml
+Loading io standards from C:/Xilinx/14.7/ISE_DS/PlanAhead/data\./parts/xilinx/spartan6/IOStandards.xml
+Loading device configuration modes from C:/Xilinx/14.7/ISE_DS/PlanAhead/data\parts/xilinx/spartan6/ConfigModes.xml
+Loading list of drcs for the architecture : C:/Xilinx/14.7/ISE_DS/PlanAhead/data\./parts/xilinx/spartan6/drc.xml
+Parsing UCF File [C:/.Xilinx/Lab9/lab9.ucf]
+Finished Parsing UCF File [C:/.Xilinx/Lab9/lab9.ucf]
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Phase 0 | Netlist Checksum: 0a7129f7
+open_rtl_design: Time (s): elapsed = 00:00:08 . Memory (MB): peak = 652.832 ; gain = 161.023
+update_compile_order -fileset sim_1
+set_property package_pin "" [get_ports [list  {DP[4]}]]
+startgroup
+set_property package_pin P99 [get_ports {DP[8]}]
+endgroup
+startgroup
+set_property package_pin P100 [get_ports {DP[7]}]
+endgroup
+startgroup
+set_property package_pin P101 [get_ports {DP[6]}]
+endgroup
+startgroup
+set_property package_pin P102 [get_ports {DP[5]}]
+endgroup
+startgroup
+set_property package_pin P104 [get_ports {DP[4]}]
+endgroup
+startgroup
+set_property package_pin P105 [get_ports {DP[3]}]
+endgroup
+startgroup
+set_property package_pin P111 [get_ports {DP[2]}]
+endgroup
+startgroup
+set_property package_pin P112 [get_ports {DP[1]}]
+endgroup
+startgroup
+set_property package_pin P111 [get_ports {DP[2]}]
+endgroup
+startgroup
+set_property package_pin P66 [get_ports {SW[0]}]
+endgroup
+startgroup
+set_property package_pin P62 [get_ports {SW[1]}]
+endgroup
+startgroup
+set_property package_pin P61 [get_ports {SW[2]}]
+endgroup
+startgroup
+set_property package_pin P59 [get_ports {SW[3]}]
+endgroup
+startgroup
+set_property package_pin P58 [get_ports {SW[4]}]
+endgroup
+startgroup
+set_property package_pin P57 [get_ports {SW[5]}]
+endgroup
+startgroup
+set_property package_pin P56 [get_ports {SW[6]}]
+endgroup
+startgroup
+set_property package_pin P55 [get_ports {SW[7]}]
+endgroup
+startgroup
+set_property package_pin P41 [get_ports a]
+endgroup
+startgroup
+set_property package_pin P40 [get_ports b]
+endgroup
+startgroup
+set_property package_pin P35 [get_ports c]
+endgroup
+startgroup
+set_property package_pin P123 [get_ports clock]
+endgroup
+set_property package_pin "" [get_ports [list  com1]]
+startgroup
+set_property package_pin P44 [get_ports com0]
+endgroup
+startgroup
+set_property package_pin P43 [get_ports com1]
+endgroup
+startgroup
+set_property package_pin P33 [get_ports com2]
+endgroup
+startgroup
+set_property package_pin P30 [get_ports com3]
+endgroup
+startgroup
+set_property package_pin P34 [get_ports d]
+endgroup
+startgroup
+set_property package_pin P32 [get_ports e]
+endgroup
+startgroup
+set_property package_pin P29 [get_ports f]
+endgroup
+startgroup
+set_property package_pin P27 [get_ports g]
+endgroup
+save_constraints
+exit
+ERROR: [PlanAhead 12-106] *** Exception: ui.h.b: Found deleted key in HTclEventBroker. Verify if the classes listed here call cleanup()
+HTclEvent: DEBUG_PORT_CONFIG_CHANGE   Classes: ui.views.aR 
+HTclEvent: SIGNAL_BUS_MODIFY   Classes: ui.views.aR 
+HTclEvent: DEBUG_CORE_CONFIG_CHANGE   Classes: ui.views.aR 
+HTclEvent: SIGNAL_MODIFY   Classes: ui.views.aR 
+ (See C:/.Xilinx/Lab9\planAhead_pid9664.debug)
+ERROR: [Common 17-39] 'stop_gui' failed due to earlier errors.
+INFO: [Common 17-206] Exiting PlanAhead at Wed Nov 04 19:55:59 2020...
+INFO: [Common 17-83] Releasing license: PlanAhead

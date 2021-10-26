@@ -1,0 +1,135 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 14.7
+//  \   \         Application : sch2hdl
+//  /   /         Filename : DIV.vf
+// /___/   /\     Timestamp : 10/21/2020 23:08:10
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: sch2hdl -intstyle ise -family spartan6 -verilog C:/.Xilinx/Lab6/DIV.vf -w C:/.Xilinx/Lab6/DIV.sch
+//Design Name: DIV
+//Device: spartan6
+//Purpose:
+//    This verilog netlist is translated from an ECS schematic.It can be 
+//    synthesized and simulated, but it should not be modified. 
+//
+`timescale 100 ps / 10 ps
+
+module FJKC_HXILINX_DIV(Q, C, CLR, J, K);
+   
+   output             Q;
+
+   input 	      C;	
+   input 	      CLR;	
+   input              J;
+   input              K;
+   
+   parameter INIT = 1'b0;
+   reg                Q = INIT;
+
+
+   always @(posedge C or posedge CLR)
+     begin
+	if (CLR)
+	  Q <= 1'b0;
+	else
+        begin
+           if(!J)
+           begin
+              if(K)
+              Q <= 1'b0;
+           end
+           else
+           begin
+              if(!K)
+              Q <= 1'b1;
+              else 
+              Q <= !Q;
+           end
+        end
+     end
+   
+endmodule
+`timescale 1ns / 1ps
+
+module div2_MUSER_DIV(clock_in, 
+                      clock_out);
+
+    input clock_in;
+   output clock_out;
+   
+   wire XLXN_18;
+   wire XLXN_19;
+   
+   (* HU_SET = "XLXI_8_14" *) 
+   FJKC_HXILINX_DIV  XLXI_8 (.C(clock_in), 
+                            .CLR(XLXN_18), 
+                            .J(XLXN_19), 
+                            .K(XLXN_19), 
+                            .Q(clock_out));
+   VCC  XLXI_9 (.P(XLXN_19));
+   INV  XLXI_10 (.I(XLXN_19), 
+                .O(XLXN_18));
+endmodule
+`timescale 1ns / 1ps
+
+module DIV(CI, 
+           CO);
+
+    input CI;
+   output CO;
+   
+   wire XLXN_22;
+   wire XLXN_23;
+   wire XLXN_24;
+   wire XLXN_26;
+   wire XLXN_27;
+   wire XLXN_28;
+   wire XLXN_29;
+   wire XLXN_30;
+   wire XLXN_31;
+   wire XLXN_32;
+   wire XLXN_33;
+   wire XLXN_34;
+   wire XLXN_35;
+   wire XLXN_36;
+   wire XLXN_37;
+   
+   div2_MUSER_DIV  XLXI_11 (.clock_in(XLXN_22), 
+                           .clock_out(XLXN_23));
+   div2_MUSER_DIV  XLXI_12 (.clock_in(CI), 
+                           .clock_out(XLXN_22));
+   div2_MUSER_DIV  XLXI_13 (.clock_in(XLXN_23), 
+                           .clock_out(XLXN_24));
+   div2_MUSER_DIV  XLXI_14 (.clock_in(XLXN_24), 
+                           .clock_out(XLXN_29));
+   div2_MUSER_DIV  XLXI_15 (.clock_in(XLXN_26), 
+                           .clock_out(XLXN_27));
+   div2_MUSER_DIV  XLXI_16 (.clock_in(XLXN_29), 
+                           .clock_out(XLXN_26));
+   div2_MUSER_DIV  XLXI_17 (.clock_in(XLXN_27), 
+                           .clock_out(XLXN_28));
+   div2_MUSER_DIV  XLXI_18 (.clock_in(XLXN_28), 
+                           .clock_out(XLXN_33));
+   div2_MUSER_DIV  XLXI_19 (.clock_in(XLXN_30), 
+                           .clock_out(XLXN_31));
+   div2_MUSER_DIV  XLXI_20 (.clock_in(XLXN_33), 
+                           .clock_out(XLXN_30));
+   div2_MUSER_DIV  XLXI_21 (.clock_in(XLXN_31), 
+                           .clock_out(XLXN_32));
+   div2_MUSER_DIV  XLXI_22 (.clock_in(XLXN_32), 
+                           .clock_out(XLXN_37));
+   div2_MUSER_DIV  XLXI_23 (.clock_in(XLXN_34), 
+                           .clock_out(XLXN_35));
+   div2_MUSER_DIV  XLXI_24 (.clock_in(XLXN_37), 
+                           .clock_out(XLXN_34));
+   div2_MUSER_DIV  XLXI_25 (.clock_in(XLXN_35), 
+                           .clock_out(XLXN_36));
+   div2_MUSER_DIV  XLXI_26 (.clock_in(XLXN_36), 
+                           .clock_out(CO));
+endmodule

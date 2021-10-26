@@ -1,0 +1,45 @@
+#-----------------------------------------------------------
+# PlanAhead v14.7 (64-bit)
+# Build 321239 by xbuild on Fri Sep 27 19:29:51 MDT 2013
+# Start of session at: Thu Oct 08 16:48:59 2020
+# Process ID: 16820
+# Log file: C:/.Xilinx/segment7/planAhead_run_3/planAhead.log
+# Journal file: C:/.Xilinx/segment7/planAhead_run_3/planAhead.jou
+#-----------------------------------------------------------
+start_gui
+source C:/.Xilinx/segment7/pa.fromHdl.tcl
+update_compile_order -fileset sim_1
+set_property iostandard LVCMOS25 [get_ports [list a]]
+set_property iostandard LVCMOS25 [get_ports [list Clear_13]]
+undo
+undo
+startgroup
+set_property package_pin P41 [get_ports a]
+endgroup
+startgroup
+set_property package_pin P40 [get_ports b]
+endgroup
+startgroup
+set_property package_pin P35 [get_ports c]
+endgroup
+startgroup
+set_property package_pin P34 [get_ports d]
+endgroup
+startgroup
+set_property package_pin P32 [get_ports e]
+endgroup
+startgroup
+set_property package_pin P29 [get_ports f]
+endgroup
+startgroup
+set_property package_pin P27 [get_ports g]
+endgroup
+startgroup
+set_property package_pin P66 [get_ports Clear_13]
+endgroup
+startgroup
+set_property package_pin P45 [get_ports Clock_10]
+endgroup
+set_property is_loc_fixed false [get_ports [list  Clock_10]]
+set_property is_loc_fixed true [get_ports [list  Clock_10]]
+save_constraints

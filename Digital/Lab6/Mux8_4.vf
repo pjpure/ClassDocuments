@@ -1,0 +1,94 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 14.7
+//  \   \         Application : sch2hdl
+//  /   /         Filename : Mux8_4.vf
+// /___/   /\     Timestamp : 10/21/2020 23:08:10
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: sch2hdl -intstyle ise -family spartan6 -verilog C:/.Xilinx/Lab6/Mux8_4.vf -w C:/.Xilinx/Lab6/Mux8_4.sch
+//Design Name: Mux8_4
+//Device: spartan6
+//Purpose:
+//    This verilog netlist is translated from an ECS schematic.It can be 
+//    synthesized and simulated, but it should not be modified. 
+//
+`timescale  100 ps / 10 ps
+
+module M2_1_HXILINX_Mux8_4 (O, D0, D1, S0);
+    
+
+   output O;
+
+   input  D0;
+   input  D1;
+   input  S0;
+
+   reg O;
+
+   always @ ( D0 or D1 or S0)
+   begin
+      case(S0)
+      1'b0 : O <= D0;
+      1'b1 : O <= D1;
+      endcase
+   end
+    
+endmodule
+`timescale 1ns / 1ps
+
+module Mux8_4(A1, 
+              A2, 
+              B1, 
+              B2, 
+              clock, 
+              C1, 
+              C2, 
+              D1, 
+              D2, 
+              A, 
+              B, 
+              C, 
+              D);
+
+    input A1;
+    input A2;
+    input B1;
+    input B2;
+    input clock;
+    input C1;
+    input C2;
+    input D1;
+    input D2;
+   output A;
+   output B;
+   output C;
+   output D;
+   
+   
+   (* HU_SET = "XLXI_1_15" *) 
+   M2_1_HXILINX_Mux8_4  XLXI_1 (.D0(D2), 
+                               .D1(D1), 
+                               .S0(clock), 
+                               .O(D));
+   (* HU_SET = "XLXI_2_16" *) 
+   M2_1_HXILINX_Mux8_4  XLXI_2 (.D0(C2), 
+                               .D1(C1), 
+                               .S0(clock), 
+                               .O(C));
+   (* HU_SET = "XLXI_3_17" *) 
+   M2_1_HXILINX_Mux8_4  XLXI_3 (.D0(B2), 
+                               .D1(B1), 
+                               .S0(clock), 
+                               .O(B));
+   (* HU_SET = "XLXI_4_18" *) 
+   M2_1_HXILINX_Mux8_4  XLXI_4 (.D0(A2), 
+                               .D1(A1), 
+                               .S0(clock), 
+                               .O(A));
+endmodule

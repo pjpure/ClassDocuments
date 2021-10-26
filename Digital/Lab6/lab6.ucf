@@ -1,0 +1,18 @@
+
+NET "a" LOC = P41;
+NET "b" LOC = P40;
+NET "Buzzer_P83" LOC = P83;
+NET "c" LOC = P35;
+NET "clock_P123" LOC = P123;
+NET "common0_P44" LOC = P43;
+NET "common1_P43" LOC = P44;
+NET "common2_P33" LOC = P33;
+NET "common3_P30" LOC = P30;
+NET "d" LOC = P34;
+NET "e" LOC = P32;
+NET "f" LOC = P29;
+NET "g" LOC = P27;
+
+# PlanAhead Generated physical constraints 
+
+NET "SW_P47" LOC = P51;

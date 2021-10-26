@@ -1,0 +1,84 @@
+xst -intstyle ise -ifn "C:/.Xilinx/Lab9_1/lab9.xst" -ofn "C:/.Xilinx/Lab9_1/lab9.syr" 
+xst -intstyle ise -ifn "C:/.Xilinx/Lab9_1/lab9.xst" -ofn "C:/.Xilinx/Lab9_1/lab9.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc lab9.ucf -p xc6slx9-tqg144-3 lab9.ngc lab9.ngd  
+xst -intstyle ise -ifn "C:/.Xilinx/Lab9_1/lab9.xst" -ofn "C:/.Xilinx/Lab9_1/lab9.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc lab9.ucf -p xc6slx9-tqg144-3 lab9.ngc lab9.ngd  
+xst -intstyle ise -ifn "C:/.Xilinx/Lab9_1/lab9.xst" -ofn "C:/.Xilinx/Lab9_1/lab9.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc lab9.ucf -p xc6slx9-tqg144-3 lab9.ngc lab9.ngd  
+xst -intstyle ise -ifn "C:/.Xilinx/Lab9_1/lab9.xst" -ofn "C:/.Xilinx/Lab9_1/lab9.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc lab9.ucf -p xc6slx9-tqg144-3 lab9.ngc lab9.ngd  
+xst -intstyle ise -ifn "C:/.Xilinx/Lab9_1/lab9.xst" -ofn "C:/.Xilinx/Lab9_1/lab9.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc lab9.ucf -p xc6slx9-tqg144-3 lab9.ngc lab9.ngd  
+xst -intstyle ise -ifn "C:/.Xilinx/Lab9_1/lab9.xst" -ofn "C:/.Xilinx/Lab9_1/lab9.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc lab9.ucf -p xc6slx9-tqg144-3 lab9.ngc lab9.ngd  
+xst -intstyle ise -ifn "C:/.Xilinx/Lab9_1/lab9.xst" -ofn "C:/.Xilinx/Lab9_1/lab9.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc lab9.ucf -p xc6slx9-tqg144-3 lab9.ngc lab9.ngd  
+xst -intstyle ise -ifn "C:/.Xilinx/Lab9_1/lab9.xst" -ofn "C:/.Xilinx/Lab9_1/lab9.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc lab9.ucf -p xc6slx9-tqg144-3 lab9.ngc lab9.ngd  
+xst -intstyle ise -ifn "C:/.Xilinx/Lab9_1/lab9.xst" -ofn "C:/.Xilinx/Lab9_1/lab9.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc lab9.ucf -p xc6slx9-tqg144-3 lab9.ngc lab9.ngd  
+xst -intstyle ise -ifn "C:/.Xilinx/Lab9_1/lab9.xst" -ofn "C:/.Xilinx/Lab9_1/lab9.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc lab9.ucf -p xc6slx9-tqg144-3 lab9.ngc lab9.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o lab9_map.ncd lab9.ngd lab9.pcf 
+par -w -intstyle ise -ol high -mt off lab9_map.ncd lab9.ncd lab9.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml lab9.twx lab9.ncd -o lab9.twr lab9.pcf -ucf lab9.ucf 
+bitgen -intstyle ise -f lab9.ut lab9.ncd 
+xst -intstyle ise -ifn "C:/.Xilinx/Lab9_1/lab9.xst" -ofn "C:/.Xilinx/Lab9_1/lab9.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc lab9.ucf -p xc6slx9-tqg144-3 lab9.ngc lab9.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o lab9_map.ncd lab9.ngd lab9.pcf 
+par -w -intstyle ise -ol high -mt off lab9_map.ncd lab9.ncd lab9.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml lab9.twx lab9.ncd -o lab9.twr lab9.pcf -ucf lab9.ucf 
+bitgen -intstyle ise -f lab9.ut lab9.ncd 
+xst -intstyle ise -ifn "C:/.Xilinx/Lab9_1/lab9.xst" -ofn "C:/.Xilinx/Lab9_1/lab9.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc lab9.ucf -p xc6slx9-tqg144-3 lab9.ngc lab9.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o lab9_map.ncd lab9.ngd lab9.pcf 
+par -w -intstyle ise -ol high -mt off lab9_map.ncd lab9.ncd lab9.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml lab9.twx lab9.ncd -o lab9.twr lab9.pcf -ucf lab9.ucf 
+bitgen -intstyle ise -f lab9.ut lab9.ncd 
+xst -intstyle ise -ifn "C:/.Xilinx/Lab9_1/lab9.xst" -ofn "C:/.Xilinx/Lab9_1/lab9.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc lab9.ucf -p xc6slx9-tqg144-3 lab9.ngc lab9.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o lab9_map.ncd lab9.ngd lab9.pcf 
+par -w -intstyle ise -ol high -mt off lab9_map.ncd lab9.ncd lab9.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml lab9.twx lab9.ncd -o lab9.twr lab9.pcf -ucf lab9.ucf 
+bitgen -intstyle ise -f lab9.ut lab9.ncd 
+xst -intstyle ise -ifn "C:/.Xilinx/Lab9_1/lab9.xst" -ofn "C:/.Xilinx/Lab9_1/lab9.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc lab9.ucf -p xc6slx9-tqg144-3 lab9.ngc lab9.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o lab9_map.ncd lab9.ngd lab9.pcf 
+par -w -intstyle ise -ol high -mt off lab9_map.ncd lab9.ncd lab9.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml lab9.twx lab9.ncd -o lab9.twr lab9.pcf -ucf lab9.ucf 
+bitgen -intstyle ise -f lab9.ut lab9.ncd 
+xst -intstyle ise -ifn "C:/.Xilinx/Lab9_1/lab9.xst" -ofn "C:/.Xilinx/Lab9_1/lab9.syr" 
+xst -intstyle ise -ifn "C:/.Xilinx/Lab9_1/lab9.xst" -ofn "C:/.Xilinx/Lab9_1/lab9.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc lab9.ucf -p xc6slx9-tqg144-3 lab9.ngc lab9.ngd  
+xst -intstyle ise -ifn "C:/.Xilinx/Lab9_1/lab9.xst" -ofn "C:/.Xilinx/Lab9_1/lab9.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc lab9.ucf -p xc6slx9-tqg144-3 lab9.ngc lab9.ngd  
+xst -intstyle ise -ifn "C:/.Xilinx/Lab9_1/lab9.xst" -ofn "C:/.Xilinx/Lab9_1/lab9.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc lab9.ucf -p xc6slx9-tqg144-3 lab9.ngc lab9.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o lab9_map.ncd lab9.ngd lab9.pcf 
+par -w -intstyle ise -ol high -mt off lab9_map.ncd lab9.ncd lab9.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml lab9.twx lab9.ncd -o lab9.twr lab9.pcf -ucf lab9.ucf 
+bitgen -intstyle ise -f lab9.ut lab9.ncd 
+xst -intstyle ise -ifn "C:/.Xilinx/Lab9_1/lab9.xst" -ofn "C:/.Xilinx/Lab9_1/lab9.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc lab9.ucf -p xc6slx9-tqg144-3 lab9.ngc lab9.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o lab9_map.ncd lab9.ngd lab9.pcf 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc lab9.ucf -p xc6slx9-tqg144-3 lab9.ngc lab9.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o lab9_map.ncd lab9.ngd lab9.pcf 
+par -w -intstyle ise -ol high -mt off lab9_map.ncd lab9.ncd lab9.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml lab9.twx lab9.ncd -o lab9.twr lab9.pcf -ucf lab9.ucf 
+bitgen -intstyle ise -f lab9.ut lab9.ncd 
+xst -intstyle ise -ifn "C:/.Xilinx/Lab9_1/lab9.xst" -ofn "C:/.Xilinx/Lab9_1/lab9.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc lab9.ucf -p xc6slx9-tqg144-3 lab9.ngc lab9.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o lab9_map.ncd lab9.ngd lab9.pcf 
+par -w -intstyle ise -ol high -mt off lab9_map.ncd lab9.ncd lab9.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml lab9.twx lab9.ncd -o lab9.twr lab9.pcf -ucf lab9.ucf 
+bitgen -intstyle ise -f lab9.ut lab9.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc lab9.ucf -p xc6slx9-tqg144-3 lab9.ngc lab9.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o lab9_map.ncd lab9.ngd lab9.pcf 
+par -w -intstyle ise -ol high -mt off lab9_map.ncd lab9.ncd lab9.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml lab9.twx lab9.ncd -o lab9.twr lab9.pcf -ucf lab9.ucf 
+bitgen -intstyle ise -f lab9.ut lab9.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc lab9.ucf -p xc6slx9-tqg144-3 lab9.ngc lab9.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o lab9_map.ncd lab9.ngd lab9.pcf 
+par -w -intstyle ise -ol high -mt off lab9_map.ncd lab9.ncd lab9.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml lab9.twx lab9.ncd -o lab9.twr lab9.pcf -ucf lab9.ucf 
+bitgen -intstyle ise -f lab9.ut lab9.ncd 

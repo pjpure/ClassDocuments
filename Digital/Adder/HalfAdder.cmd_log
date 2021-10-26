@@ -1,0 +1,14 @@
+xst -intstyle ise -ifn "C:/.Xilinx/Adder/HalfAdder.xst" -ofn "C:/.Xilinx/Adder/HalfAdder.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc HalfAdderPin.ucf -uc HalfAdder.ucf -p xc6slx9-tqg144-3 HalfAdder.ngc HalfAdder.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o HalfAdder_map.ncd HalfAdder.ngd HalfAdder.pcf 
+par -w -intstyle ise -ol high -mt off HalfAdder_map.ncd HalfAdder.ncd HalfAdder.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml HalfAdder.twx HalfAdder.ncd -o HalfAdder.twr HalfAdder.pcf -ucf HalfAdderPin.ucf -ucf HalfAdder.ucf 
+bitgen -intstyle ise -f HalfAdder.ut HalfAdder.ncd 
+xst -intstyle ise -ifn "C:/.Xilinx/Adder/HalfAdder.xst" -ofn "C:/.Xilinx/Adder/HalfAdder.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc HalfAdderPin.ucf -uc HalfAdder.ucf -p xc6slx9-tqg144-3 HalfAdder.ngc HalfAdder.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o HalfAdder_map.ncd HalfAdder.ngd HalfAdder.pcf 
+par -w -intstyle ise -ol high -mt off HalfAdder_map.ncd HalfAdder.ncd HalfAdder.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml HalfAdder.twx HalfAdder.ncd -o HalfAdder.twr HalfAdder.pcf -ucf HalfAdderPin.ucf -ucf HalfAdder.ucf 
+bitgen -intstyle ise -f HalfAdder.ut HalfAdder.ncd 
+xst -intstyle ise -ifn "C:/.Xilinx/Adder/HalfAdder.xst" -ofn "C:/.Xilinx/Adder/HalfAdder.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc HalfAdder.ucf -uc HalfAdderPin.ucf -p xc6slx9-tqg144-3 HalfAdder.ngc HalfAdder.ngd  

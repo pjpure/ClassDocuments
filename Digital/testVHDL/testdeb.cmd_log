@@ -1,0 +1,17 @@
+xst -intstyle ise -ifn "C:/.Xilinx/testVHDL/testdeb.xst" -ofn "C:/.Xilinx/testVHDL/testdeb.syr" 
+xst -intstyle ise -ifn "C:/.Xilinx/testVHDL/testdeb.xst" -ofn "C:/.Xilinx/testVHDL/testdeb.syr" 
+xst -intstyle ise -ifn "C:/.Xilinx/testVHDL/testdeb.xst" -ofn "C:/.Xilinx/testVHDL/testdeb.syr" 
+xst -intstyle ise -ifn "C:/.Xilinx/testVHDL/testdeb.xst" -ofn "C:/.Xilinx/testVHDL/testdeb.syr" 
+xst -intstyle ise -ifn "C:/.Xilinx/testVHDL/testdeb.xst" -ofn "C:/.Xilinx/testVHDL/testdeb.syr" 
+xst -intstyle ise -ifn "C:/.Xilinx/testVHDL/testdeb.xst" -ofn "C:/.Xilinx/testVHDL/testdeb.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc testdeb.ucf -p xc6slx9-tqg144-3 testdeb.ngc testdeb.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o testdeb_map.ncd testdeb.ngd testdeb.pcf 
+par -w -intstyle ise -ol high -mt off testdeb_map.ncd testdeb.ncd testdeb.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml testdeb.twx testdeb.ncd -o testdeb.twr testdeb.pcf -ucf testdeb.ucf 
+bitgen -intstyle ise -f testdeb.ut testdeb.ncd 
+xst -intstyle ise -ifn "C:/.Xilinx/testVHDL/testdeb.xst" -ofn "C:/.Xilinx/testVHDL/testdeb.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc testdeb.ucf -p xc6slx9-tqg144-3 testdeb.ngc testdeb.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o testdeb_map.ncd testdeb.ngd testdeb.pcf 
+par -w -intstyle ise -ol high -mt off testdeb_map.ncd testdeb.ncd testdeb.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml testdeb.twx testdeb.ncd -o testdeb.twr testdeb.pcf -ucf testdeb.ucf 
+bitgen -intstyle ise -f testdeb.ut testdeb.ncd 

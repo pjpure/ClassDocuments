@@ -1,0 +1,7 @@
+MODULE testdeb
+	SUBMODULE debounce
+		INSTANCE XLXI_1
+	SUBMODULE Clock_Divider
+		INSTANCE XLXI_2
+	SUBMODULE counter
+		INSTANCE XLXI_4

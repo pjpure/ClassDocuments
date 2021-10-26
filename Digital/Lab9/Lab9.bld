@@ -1,0 +1,125 @@
+Release 14.7 ngdbuild P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+Command Line: C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\ngdbuild.exe
+-intstyle ise -dd _ngo -nt timestamp -uc lab9.ucf -p xc6slx9-tqg144-3 Lab9.ngc
+Lab9.ngd
+
+Reading NGO file "C:/.Xilinx/Lab9/Lab9.ngc" ...
+Gathering constraint information from source properties...
+Done.
+INFO:NgdBuild:889 - Pad net 'XLXN_8<8>' is not connected to an external port in
+   this design.  A new port 'XLXN_8<8>' has been added and is connected to this
+   signal.
+INFO:NgdBuild:889 - Pad net 'XLXN_8<7>' is not connected to an external port in
+   this design.  A new port 'XLXN_8<7>' has been added and is connected to this
+   signal.
+INFO:NgdBuild:889 - Pad net 'XLXN_8<6>' is not connected to an external port in
+   this design.  A new port 'XLXN_8<6>' has been added and is connected to this
+   signal.
+INFO:NgdBuild:889 - Pad net 'XLXN_8<5>' is not connected to an external port in
+   this design.  A new port 'XLXN_8<5>' has been added and is connected to this
+   signal.
+INFO:NgdBuild:889 - Pad net 'XLXN_8<4>' is not connected to an external port in
+   this design.  A new port 'XLXN_8<4>' has been added and is connected to this
+   signal.
+INFO:NgdBuild:889 - Pad net 'XLXN_8<3>' is not connected to an external port in
+   this design.  A new port 'XLXN_8<3>' has been added and is connected to this
+   signal.
+INFO:NgdBuild:889 - Pad net 'XLXN_8<2>' is not connected to an external port in
+   this design.  A new port 'XLXN_8<2>' has been added and is connected to this
+   signal.
+INFO:NgdBuild:889 - Pad net 'XLXN_8<1>' is not connected to an external port in
+   this design.  A new port 'XLXN_8<1>' has been added and is connected to this
+   signal.
+INFO:NgdBuild:889 - Pad net 'XLXN_7<0>' is not connected to an external port in
+   this design.  A new port 'XLXN_7<0>' has been added and is connected to this
+   signal.
+INFO:NgdBuild:889 - Pad net 'XLXN_7<1>' is not connected to an external port in
+   this design.  A new port 'XLXN_7<1>' has been added and is connected to this
+   signal.
+INFO:NgdBuild:889 - Pad net 'XLXN_7<2>' is not connected to an external port in
+   this design.  A new port 'XLXN_7<2>' has been added and is connected to this
+   signal.
+INFO:NgdBuild:889 - Pad net 'XLXN_7<3>' is not connected to an external port in
+   this design.  A new port 'XLXN_7<3>' has been added and is connected to this
+   signal.
+INFO:NgdBuild:889 - Pad net 'XLXN_7<4>' is not connected to an external port in
+   this design.  A new port 'XLXN_7<4>' has been added and is connected to this
+   signal.
+INFO:NgdBuild:889 - Pad net 'XLXN_7<5>' is not connected to an external port in
+   this design.  A new port 'XLXN_7<5>' has been added and is connected to this
+   signal.
+INFO:NgdBuild:889 - Pad net 'XLXN_7<6>' is not connected to an external port in
+   this design.  A new port 'XLXN_7<6>' has been added and is connected to this
+   signal.
+INFO:NgdBuild:889 - Pad net 'XLXN_7<7>' is not connected to an external port in
+   this design.  A new port 'XLXN_7<7>' has been added and is connected to this
+   signal.
+
+Annotating constraints to design from ucf file "lab9.ucf" ...
+Resolving constraint associations...
+Checking Constraint Associations...
+Done...
+
+Checking expanded design ...
+ERROR:NgdBuild:809 - output pad net 'XLXN_8<8>' has an illegal load:
+     pin I1 on block XLXI_13/Madd_n0010_Madd_lut<7> with type LUT2
+ERROR:NgdBuild:809 - output pad net 'XLXN_8<7>' has an illegal load:
+     pin I1 on block XLXI_13/Madd_n0010_Madd_lut<6> with type LUT2
+ERROR:NgdBuild:809 - output pad net 'XLXN_8<6>' has an illegal load:
+     pin I1 on block XLXI_13/Madd_n0010_Madd_lut<5> with type LUT2
+ERROR:NgdBuild:809 - output pad net 'XLXN_8<5>' has an illegal load:
+     pin I1 on block XLXI_13/Madd_n0010_Madd_lut<4> with type LUT2
+ERROR:NgdBuild:809 - output pad net 'XLXN_8<4>' has an illegal load:
+     pin I1 on block XLXI_13/Madd_n0010_Madd_lut<3> with type LUT2
+ERROR:NgdBuild:809 - output pad net 'XLXN_8<3>' has an illegal load:
+     pin I1 on block XLXI_13/Madd_n0010_Madd_lut<2> with type LUT2
+ERROR:NgdBuild:809 - output pad net 'XLXN_8<2>' has an illegal load:
+     pin I1 on block XLXI_13/Madd_n0010_Madd_lut<1> with type LUT2
+ERROR:NgdBuild:809 - output pad net 'XLXN_8<1>' has an illegal load:
+     pin I1 on block XLXI_13/Madd_n0010_Madd_lut<0> with type LUT2
+ERROR:NgdBuild:809 - output pad net 'XLXN_7<0>' has an illegal load:
+     pin I0 on block XLXI_13/Madd_n0010_Madd_lut<7> with type LUT2,
+     pin DI on block XLXI_13/Madd_n0010_Madd_cy<7> with type MUXCY
+ERROR:NgdBuild:809 - output pad net 'XLXN_7<1>' has an illegal load:
+     pin I0 on block XLXI_13/Madd_n0010_Madd_lut<6> with type LUT2,
+     pin DI on block XLXI_13/Madd_n0010_Madd_cy<6> with type MUXCY
+ERROR:NgdBuild:809 - output pad net 'XLXN_7<2>' has an illegal load:
+     pin I0 on block XLXI_13/Madd_n0010_Madd_lut<5> with type LUT2,
+     pin DI on block XLXI_13/Madd_n0010_Madd_cy<5> with type MUXCY
+ERROR:NgdBuild:809 - output pad net 'XLXN_7<3>' has an illegal load:
+     pin I0 on block XLXI_13/Madd_n0010_Madd_lut<4> with type LUT2,
+     pin DI on block XLXI_13/Madd_n0010_Madd_cy<4> with type MUXCY
+ERROR:NgdBuild:809 - output pad net 'XLXN_7<4>' has an illegal load:
+     pin I0 on block XLXI_13/Madd_n0010_Madd_lut<3> with type LUT2,
+     pin DI on block XLXI_13/Madd_n0010_Madd_cy<3> with type MUXCY
+ERROR:NgdBuild:809 - output pad net 'XLXN_7<5>' has an illegal load:
+     pin I0 on block XLXI_13/Madd_n0010_Madd_lut<2> with type LUT2,
+     pin DI on block XLXI_13/Madd_n0010_Madd_cy<2> with type MUXCY
+ERROR:NgdBuild:809 - output pad net 'XLXN_7<6>' has an illegal load:
+     pin I0 on block XLXI_13/Madd_n0010_Madd_lut<1> with type LUT2,
+     pin DI on block XLXI_13/Madd_n0010_Madd_cy<1> with type MUXCY
+ERROR:NgdBuild:809 - output pad net 'XLXN_7<7>' has an illegal load:
+     pin I0 on block XLXI_13/Madd_n0010_Madd_lut<0> with type LUT2,
+     pin DI on block XLXI_13/Madd_n0010_Madd_cy<0> with type MUXCY
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+NGDBUILD Design Results Summary:
+  Number of errors:    16
+  Number of warnings:   0
+
+Total memory usage is 4399956 kilobytes
+
+Total REAL time to NGDBUILD completion:  2 sec
+Total CPU time to NGDBUILD completion:   2 sec
+
+One or more errors were found during NGDBUILD.  No NGD file will be written.
+
+Writing NGDBUILD log file "Lab9.bld"...

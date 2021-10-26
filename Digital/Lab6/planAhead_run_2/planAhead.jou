@@ -1,0 +1,18 @@
+#-----------------------------------------------------------
+# PlanAhead v14.7 (64-bit)
+# Build 321239 by xbuild on Fri Sep 27 19:29:51 MDT 2013
+# Start of session at: Wed Oct 21 23:20:48 2020
+# Process ID: 21972
+# Log file: C:/.Xilinx/Lab6/planAhead_run_2/planAhead.log
+# Journal file: C:/.Xilinx/Lab6/planAhead_run_2/planAhead.jou
+#-----------------------------------------------------------
+start_gui
+source C:/.Xilinx/Lab6/pa.fromHdl.tcl
+update_compile_order -fileset sim_1
+startgroup
+set_property package_pin P47 [get_ports SW_P47]
+endgroup
+startgroup
+set_property package_pin P29 [get_ports f]
+endgroup
+save_constraints

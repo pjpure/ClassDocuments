@@ -1,0 +1,15 @@
+NET "sw" CLOCK_DEDICATED_ROUTE = FALSE;
+NET "a" LOC = P142;
+NET "b" LOC = P132;
+NET "c" LOC = P15;
+NET "com0" LOC = P1;
+NET "sw" LOC = P45;
+NET "d" LOC = P22;
+NET "e" LOC = P24;
+NET "f" LOC = P140;
+NET "g" LOC = P12;
+
+NET "Buz" LOC = P83;
+NET "com1" LOC = P138;
+NET "com2" LOC = P134;
+NET "com3" LOC = P10;

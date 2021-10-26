@@ -1,0 +1,98 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 14.7
+//  \   \         Application : sch2hdl
+//  /   /         Filename : selectCommon.vf
+// /___/   /\     Timestamp : 11/04/2020 15:12:10
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: sch2hdl -intstyle ise -family spartan6 -verilog C:/.Xilinx/lab8/selectCommon.vf -w C:/.Xilinx/lab8/selectCommon.sch
+//Design Name: selectCommon
+//Device: spartan6
+//Purpose:
+//    This verilog netlist is translated from an ECS schematic.It can be 
+//    synthesized and simulated, but it should not be modified. 
+//
+`timescale 100 ps / 10 ps
+
+module CB2CE_HXILINX_selectCommon(CEO, Q0, Q1, TC, C, CE, CLR);
+   
+   localparam TERMINAL_COUNT = 2'b11;
+   
+   output             CEO;
+   output             Q0;
+   output             Q1;
+   output             TC;
+
+   input 	      C;	
+   input 	      CE;	
+   input 	      CLR;	
+   
+   reg                Q0;
+   reg                Q1;
+   
+   always @(posedge C or posedge CLR)
+     begin
+	if (CLR)
+	  {Q1, Q0} <= 2'b00;
+	else if (CE)
+	  {Q1,Q0} <= {Q1,Q0} + 1;
+     end
+   
+   assign CEO = TC & CE;
+   assign TC = ({Q1,Q0} == TERMINAL_COUNT);
+   
+endmodule
+`timescale 1ns / 1ps
+
+module selectCommon(Clock, 
+                    com0, 
+                    com1, 
+                    com2, 
+                    com3);
+
+    input Clock;
+   output com0;
+   output com1;
+   output com2;
+   output com3;
+   
+   wire XLXN_19;
+   wire XLXN_22;
+   wire XLXN_46;
+   wire XLXN_47;
+   wire XLXN_50;
+   wire XLXN_51;
+   
+   (* HU_SET = "XLXI_5_15" *) 
+   CB2CE_HXILINX_selectCommon  XLXI_5 (.C(Clock), 
+                                      .CE(XLXN_22), 
+                                      .CLR(XLXN_19), 
+                                      .CEO(), 
+                                      .Q0(XLXN_50), 
+                                      .Q1(XLXN_46), 
+                                      .TC());
+   GND  XLXI_6 (.G(XLXN_19));
+   VCC  XLXI_8 (.P(XLXN_22));
+   OR2  XLXI_20 (.I0(XLXN_46), 
+                .I1(XLXN_50), 
+                .O(com0));
+   INV  XLXI_21 (.I(XLXN_46), 
+                .O(XLXN_47));
+   OR2  XLXI_22 (.I0(XLXN_47), 
+                .I1(XLXN_50), 
+                .O(com1));
+   INV  XLXI_23 (.I(XLXN_50), 
+                .O(XLXN_51));
+   OR2  XLXI_24 (.I0(XLXN_46), 
+                .I1(XLXN_51), 
+                .O(com2));
+   OR2  XLXI_25 (.I0(XLXN_47), 
+                .I1(XLXN_51), 
+                .O(com3));
+endmodule

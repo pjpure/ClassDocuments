@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<Interface Version="1" Minor="1">
+	<Ifc Id="ROOT" Top="1">
+		<Port Id="clock" Dir="IN"/>
+		<Port Id="DP0" Dir="IN"/>
+		<Port Id="DP1" Dir="IN"/>
+		<Port Id="DP2" Dir="IN"/>
+		<Port Id="DP3" Dir="IN"/>
+		<Port Id="DP4" Dir="IN"/>
+		<Port Id="DP5" Dir="IN"/>
+		<Port Id="DP6" Dir="IN"/>
+		<Port Id="DP7" Dir="IN"/>
+		<Port Id="SW0" Dir="IN"/>
+		<Port Id="SW1" Dir="IN"/>
+		<Port Id="SW2" Dir="IN"/>
+		<Port Id="SW3" Dir="IN"/>
+		<Port Id="SW4" Dir="IN"/>
+		<Port Id="SW5" Dir="IN"/>
+		<Port Id="SW6" Dir="IN"/>
+		<Port Id="SW7" Dir="IN"/>
+		<Port Id="a" Dir="OUT"/>
+		<Port Id="b" Dir="OUT"/>
+		<Port Id="c" Dir="OUT"/>
+		<Port Id="com0" Dir="OUT"/>
+		<Port Id="com1" Dir="OUT"/>
+		<Port Id="com2" Dir="OUT"/>
+		<Port Id="com3" Dir="OUT"/>
+		<Port Id="d" Dir="OUT"/>
+		<Port Id="e" Dir="OUT"/>
+		<Port Id="f" Dir="OUT"/>
+		<Port Id="g" Dir="OUT"/>
+	</Ifc>
+</Interface>
+

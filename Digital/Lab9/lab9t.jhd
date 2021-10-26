@@ -1,0 +1,3 @@
+MODULE lab9t
+	SUBMODULE input2
+		INSTANCE XLXI_1

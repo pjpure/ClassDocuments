@@ -1,0 +1,132 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 14.7
+//  \   \         Application : sch2hdl
+//  /   /         Filename : CLK1Hz.vf
+// /___/   /\     Timestamp : 11/26/2020 03:33:52
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: sch2hdl -intstyle ise -family spartan6 -verilog C:/.Xilinx/Lab9_1/CLK1Hz.vf -w C:/.Xilinx/Lab9_1/CLK1Hz.sch
+//Design Name: CLK1Hz
+//Device: spartan6
+//Purpose:
+//    This verilog netlist is translated from an ECS schematic.It can be 
+//    synthesized and simulated, but it should not be modified. 
+//
+`timescale 100 ps / 10 ps
+
+module FJKC_HXILINX_CLK1Hz(Q, C, CLR, J, K);
+   
+   output             Q;
+
+   input 	      C;	
+   input 	      CLR;	
+   input              J;
+   input              K;
+   
+   parameter INIT = 1'b0;
+   reg                Q = INIT;
+
+
+   always @(posedge C or posedge CLR)
+     begin
+	if (CLR)
+	  Q <= 1'b0;
+	else
+        begin
+           if(!J)
+           begin
+              if(K)
+              Q <= 1'b0;
+           end
+           else
+           begin
+              if(!K)
+              Q <= 1'b1;
+              else 
+              Q <= !Q;
+           end
+        end
+     end
+   
+endmodule
+`timescale 1ns / 1ps
+
+module div2_MUSER_CLK1Hz(clock_in, 
+                         clock_out);
+
+    input clock_in;
+   output clock_out;
+   
+   wire XLXN_18;
+   wire XLXN_19;
+   
+   (* HU_SET = "XLXI_8_0" *) 
+   FJKC_HXILINX_CLK1Hz  XLXI_8 (.C(clock_in), 
+                               .CLR(XLXN_18), 
+                               .J(XLXN_19), 
+                               .K(XLXN_19), 
+                               .Q(clock_out));
+   VCC  XLXI_9 (.P(XLXN_19));
+   INV  XLXI_10 (.I(XLXN_19), 
+                .O(XLXN_18));
+endmodule
+`timescale 1ns / 1ps
+
+module DIV_MUSER_CLK1Hz(CI, 
+                        CO);
+
+    input CI;
+   output CO;
+   
+   wire XLXN_1;
+   wire XLXN_2;
+   wire XLXN_3;
+   wire XLXN_4;
+   wire XLXN_5;
+   wire XLXN_6;
+   wire XLXN_7;
+   
+   div2_MUSER_CLK1Hz  XLXI_1 (.clock_in(CI), 
+                             .clock_out(XLXN_1));
+   div2_MUSER_CLK1Hz  XLXI_2 (.clock_in(XLXN_1), 
+                             .clock_out(XLXN_2));
+   div2_MUSER_CLK1Hz  XLXI_3 (.clock_in(XLXN_2), 
+                             .clock_out(XLXN_3));
+   div2_MUSER_CLK1Hz  XLXI_4 (.clock_in(XLXN_3), 
+                             .clock_out(XLXN_7));
+   div2_MUSER_CLK1Hz  XLXI_5 (.clock_in(XLXN_7), 
+                             .clock_out(XLXN_4));
+   div2_MUSER_CLK1Hz  XLXI_6 (.clock_in(XLXN_4), 
+                             .clock_out(XLXN_5));
+   div2_MUSER_CLK1Hz  XLXI_7 (.clock_in(XLXN_5), 
+                             .clock_out(XLXN_6));
+   div2_MUSER_CLK1Hz  XLXI_8 (.clock_in(XLXN_6), 
+                             .clock_out(CO));
+endmodule
+`timescale 1ns / 1ps
+
+module CLK1Hz(clk20MHz, 
+              Clk1Hz);
+
+    input clk20MHz;
+   output Clk1Hz;
+   
+   wire XLXN_1;
+   wire XLXN_2;
+   wire XLXN_3;
+   
+   DIV_MUSER_CLK1Hz  XLXI_1 (.CI(clk20MHz), 
+                            .CO(XLXN_1));
+   DIV_MUSER_CLK1Hz  XLXI_2 (.CI(XLXN_1), 
+                            .CO(XLXN_2));
+   DIV_MUSER_CLK1Hz  XLXI_3 (.CI(XLXN_2), 
+                            .CO(XLXN_3));
+   DIV_MUSER_CLK1Hz  XLXI_4 (.CI(XLXN_3), 
+                            .CO(Clk1Hz));
+endmodule

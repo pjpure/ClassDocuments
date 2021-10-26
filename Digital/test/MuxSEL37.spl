@@ -1,0 +1,5 @@
+[Inputs]
+CLK
+[Outputs]
+=Q[38:0]=
+[BiDir]

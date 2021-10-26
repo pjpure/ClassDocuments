@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<symbol version="7" name="nand9">
+    <symboltype>BLOCK</symboltype>
+    <timestamp>2000-1-1T10:10:10</timestamp>
+    <attr value="NAND9_HXILINX" name="VeriModel" />
+    <attr value="Copy Of Symbol With Level: HXILINX" name="Level" />
+    <attr value="NAND9_HXILINX" name="VhdlModel" />
+    <attr value="2.0.0" name="Libver" />
+    <pin polarity="Input" x="0" y="-64" name="I0" />
+    <pin polarity="Input" x="0" y="-128" name="I1" />
+    <pin polarity="Input" x="0" y="-192" name="I2" />
+    <pin polarity="Input" x="0" y="-256" name="I3" />
+    <pin polarity="Input" x="0" y="-320" name="I4" />
+    <pin polarity="Input" x="0" y="-384" name="I5" />
+    <pin polarity="Input" x="0" y="-448" name="I6" />
+    <pin polarity="Input" x="0" y="-512" name="I7" />
+    <pin polarity="Input" x="0" y="-576" name="I8" />
+    <pin polarity="Output" x="256" y="-320" name="O" />
+    <graph>
+        <line x2="64" y1="-64" y2="-576" x1="64" />
+        <line x2="64" y1="-576" y2="-576" x1="0" />
+        <line x2="64" y1="-448" y2="-448" x1="0" />
+        <line x2="64" y1="-384" y2="-384" x1="0" />
+        <line x2="64" y1="-320" y2="-320" x1="0" />
+        <line x2="64" y1="-256" y2="-256" x1="0" />
+        <line x2="64" y1="-192" y2="-192" x1="0" />
+        <line x2="64" y1="-128" y2="-128" x1="0" />
+        <line x2="64" y1="-64" y2="-64" x1="0" />
+        <line x2="64" y1="-512" y2="-512" x1="0" />
+        <line x2="144" y1="-368" y2="-368" x1="64" />
+        <line x2="64" y1="-272" y2="-272" x1="144" />
+        <arc ex="144" ey="-368" sx="144" sy="-272" r="48" cx="144" cy="-320" />
+        <line x2="216" y1="-320" y2="-320" x1="256" />
+        <circle r="12" cx="204" cy="-320" />
+        <text style="fontsize:24;fontname:Arial" x="32" y="-32">NAND9</text>
+    </graph>
+</symbol>

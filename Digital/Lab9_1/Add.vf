@@ -1,0 +1,58 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 14.7
+//  \   \         Application : sch2hdl
+//  /   /         Filename : Add.vf
+// /___/   /\     Timestamp : 11/04/2020 23:00:28
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: sch2hdl -intstyle ise -family spartan6 -verilog C:/.Xilinx/Lab9_1/Add.vf -w C:/.Xilinx/Lab9_1/Add.sch
+//Design Name: Add
+//Device: spartan6
+//Purpose:
+//    This verilog netlist is translated from an ECS schematic.It can be 
+//    synthesized and simulated, but it should not be modified. 
+//
+`timescale  100 ps / 10 ps
+
+module ADD8_HXILINX_Add (CO, OFL, S, A, B, CI);
+
+
+   output 	      CO;
+   output 	      OFL;
+   output [7:0]       S;
+
+   input  [7:0]       A;
+   input  [7:0]       B;
+   input              CI;
+
+   assign   {CO, S} = A + B + CI;
+   assign   OFL     = ( A[7] & B[7] & (~S[7])) | ((~A[7]) & (~B[7]) & S[7]);
+
+endmodule
+`timescale 1ns / 1ps
+
+module Add(In1, 
+           In2, 
+           OutA);
+
+    input [7:0] In1;
+    input [7:0] In2;
+   output [7:0] OutA;
+   
+   wire XLXN_33;
+   
+   (* HU_SET = "XLXI_4_0" *) 
+   ADD8_HXILINX_Add  XLXI_4 (.A(In1[7:0]), 
+                            .B(In2[7:0]), 
+                            .CI(XLXN_33), 
+                            .CO(), 
+                            .OFL(), 
+                            .S(OutA[7:0]));
+   GND  XLXI_5 (.G(XLXN_33));
+endmodule

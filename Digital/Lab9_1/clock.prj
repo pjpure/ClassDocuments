@@ -1,0 +1,6 @@
+verilog work "div2.vf"
+verilog work "DIV.vf"
+verilog work "counter05.vf"
+verilog work "CLK1Hz.vf"
+verilog work "BCD27.vf"
+verilog work "clock.vf"

@@ -1,0 +1,113 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 14.7
+//  \   \         Application : sch2hdl
+//  /   /         Filename : nub15.vf
+// /___/   /\     Timestamp : 12/14/2020 17:52:41
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: sch2hdl -intstyle ise -family spartan6 -verilog C:/.Xilinx/test/nub15.vf -w C:/.Xilinx/test/nub15.sch
+//Design Name: nub15
+//Device: spartan6
+//Purpose:
+//    This verilog netlist is translated from an ECS schematic.It can be 
+//    synthesized and simulated, but it should not be modified. 
+//
+`timescale 100 ps / 10 ps
+
+module FJKC_HXILINX_nub15(Q, C, CLR, J, K);
+   
+   output             Q;
+
+   input 	      C;	
+   input 	      CLR;	
+   input              J;
+   input              K;
+   
+   parameter INIT = 1'b0;
+   reg                Q = INIT;
+
+
+   always @(posedge C or posedge CLR)
+     begin
+	if (CLR)
+	  Q <= 1'b0;
+	else
+        begin
+           if(!J)
+           begin
+              if(K)
+              Q <= 1'b0;
+           end
+           else
+           begin
+              if(!K)
+              Q <= 1'b1;
+              else 
+              Q <= !Q;
+           end
+        end
+     end
+   
+endmodule
+`timescale 1ns / 1ps
+
+module nub15(sw, 
+             a, 
+             b, 
+             c);
+
+    input sw;
+   output a;
+   output b;
+   output c;
+   
+   wire XLXN_2;
+   wire XLXN_7;
+   wire XLXN_10;
+   wire XLXN_12;
+   wire XLXN_17;
+   wire XLXN_18;
+   wire a_DUMMY;
+   wire b_DUMMY;
+   wire c_DUMMY;
+   
+   assign a = a_DUMMY;
+   assign b = b_DUMMY;
+   assign c = c_DUMMY;
+   (* HU_SET = "XLXI_1_9" *) 
+   FJKC_HXILINX_nub15  XLXI_1 (.C(sw), 
+                              .CLR(XLXN_2), 
+                              .J(XLXN_7), 
+                              .K(a_DUMMY), 
+                              .Q(c_DUMMY));
+   (* HU_SET = "XLXI_2_10" *) 
+   FJKC_HXILINX_nub15  XLXI_2 (.C(sw), 
+                              .CLR(XLXN_2), 
+                              .J(XLXN_10), 
+                              .K(a_DUMMY), 
+                              .Q(b_DUMMY));
+   (* HU_SET = "XLXI_3_11" *) 
+   FJKC_HXILINX_nub15  XLXI_3 (.C(sw), 
+                              .CLR(XLXN_2), 
+                              .J(XLXN_17), 
+                              .K(XLXN_18), 
+                              .Q(a_DUMMY));
+   AND2  XLXI_4 (.I0(a_DUMMY), 
+                .I1(b_DUMMY), 
+                .O(XLXN_7));
+   AND2  XLXI_5 (.I0(a_DUMMY), 
+                .I1(XLXN_12), 
+                .O(XLXN_10));
+   INV  XLXI_6 (.I(c_DUMMY), 
+               .O(XLXN_12));
+   VCC  XLXI_7 (.P(XLXN_17));
+   INV  XLXI_8 (.I(c_DUMMY), 
+               .O(XLXN_18));
+   GND  XLXI_9 (.G(XLXN_2));
+endmodule

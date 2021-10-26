@@ -1,0 +1,66 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 14.7
+//  \   \         Application : sch2hdl
+//  /   /         Filename : lab9t.vf
+// /___/   /\     Timestamp : 11/04/2020 20:22:21
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: sch2hdl -intstyle ise -family spartan6 -verilog C:/.Xilinx/Lab9/lab9t.vf -w C:/.Xilinx/Lab9/lab9t.sch
+//Design Name: lab9t
+//Device: spartan6
+//Purpose:
+//    This verilog netlist is translated from an ECS schematic.It can be 
+//    synthesized and simulated, but it should not be modified. 
+//
+`timescale 1ns / 1ps
+
+module input2_MUSER_lab9t(DP, 
+                          In2);
+
+    input [1:8] DP;
+   output [8:1] In2;
+   
+   
+   (* IOSTANDARD = "DEFAULT" *) (* SLEW = "SLOW" *) (* DRIVE = "12" *) 
+   OBUF  XLXI_1 (.I(DP[7]), 
+                .O(In2[7]));
+   (* IOSTANDARD = "DEFAULT" *) (* SLEW = "SLOW" *) (* DRIVE = "12" *) 
+   OBUF  XLXI_2 (.I(DP[6]), 
+                .O(In2[6]));
+   (* IOSTANDARD = "DEFAULT" *) (* SLEW = "SLOW" *) (* DRIVE = "12" *) 
+   OBUF  XLXI_3 (.I(DP[5]), 
+                .O(In2[5]));
+   (* IOSTANDARD = "DEFAULT" *) (* SLEW = "SLOW" *) (* DRIVE = "12" *) 
+   OBUF  XLXI_4 (.I(DP[4]), 
+                .O(In2[4]));
+   (* IOSTANDARD = "DEFAULT" *) (* SLEW = "SLOW" *) (* DRIVE = "12" *) 
+   OBUF  XLXI_5 (.I(DP[3]), 
+                .O(In2[3]));
+   (* IOSTANDARD = "DEFAULT" *) (* SLEW = "SLOW" *) (* DRIVE = "12" *) 
+   OBUF  XLXI_6 (.I(DP[2]), 
+                .O(In2[2]));
+   (* IOSTANDARD = "DEFAULT" *) (* SLEW = "SLOW" *) (* DRIVE = "12" *) 
+   OBUF  XLXI_7 (.I(DP[1]), 
+                .O(In2[1]));
+   (* IOSTANDARD = "DEFAULT" *) (* SLEW = "SLOW" *) (* DRIVE = "12" *) 
+   OBUF  XLXI_8 (.I(DP[8]), 
+                .O(In2[8]));
+endmodule
+`timescale 1ns / 1ps
+
+module lab9t(DP, 
+             MN);
+
+    input [1:8] DP;
+   output [0:7] MN;
+   
+   
+   input2_MUSER_lab9t  XLXI_1 (.DP(DP[1:8]), 
+                              .In2(MN[0:7]));
+endmodule

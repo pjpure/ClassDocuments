@@ -1,0 +1,17 @@
+
+# PlanAhead Generated physical constraints 
+NET "Clock_10" CLOCK_DEDICATED_ROUTE = FALSE;
+NET "a" LOC = P41;
+NET "b" LOC = P40;
+NET "c" LOC = P35;
+NET "d" LOC = P34;
+NET "e" LOC = P32;
+NET "f" LOC = P29;
+NET "g" LOC = P27;
+NET "clear" LOC = P66;
+NET "Clock_10" LOC = P45;
+NET "Ja" LOC = P62;
+NET "com1" LOC = P43;
+NET "com2" LOC = P33;
+NET "com3" LOC = P30;
+

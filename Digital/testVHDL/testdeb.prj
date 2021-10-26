@@ -1,0 +1,4 @@
+vhdl work "debounce.vhd"
+vhdl work "counter.vhd"
+vhdl work "clockDIV.vhd"
+vhdl work "testdeb.vhf"

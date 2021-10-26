@@ -1,0 +1,8 @@
+Release 14.7 Drc P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+Thu Nov 05 14:05:20 2020
+
+drc -z lab9.ncd lab9.pcf
+
+DRC detected 0 errors and 0 warnings.

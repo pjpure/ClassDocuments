@@ -1,0 +1,21 @@
+//! **************************************************************************
+// Written by: Map P.20131013 on Thu Oct 22 09:58:39 2020
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "e" LOCATE = SITE "P32" LEVEL 1;
+COMP "f" LOCATE = SITE "P29" LEVEL 1;
+COMP "common1_P43" LOCATE = SITE "P44" LEVEL 1;
+COMP "g" LOCATE = SITE "P27" LEVEL 1;
+COMP "common2_P33" LOCATE = SITE "P33" LEVEL 1;
+COMP "common3_P30" LOCATE = SITE "P30" LEVEL 1;
+COMP "SW_P47" LOCATE = SITE "P51" LEVEL 1;
+COMP "Buzzer_P83" LOCATE = SITE "P83" LEVEL 1;
+COMP "clock_P123" LOCATE = SITE "P123" LEVEL 1;
+COMP "common0_P44" LOCATE = SITE "P43" LEVEL 1;
+COMP "a" LOCATE = SITE "P41" LEVEL 1;
+COMP "b" LOCATE = SITE "P40" LEVEL 1;
+COMP "c" LOCATE = SITE "P35" LEVEL 1;
+COMP "d" LOCATE = SITE "P34" LEVEL 1;
+SCHEMATIC END;
+

@@ -1,0 +1,412 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 14.7
+//  \   \         Application : sch2hdl
+//  /   /         Filename : test7seg.vf
+// /___/   /\     Timestamp : 12/14/2020 21:03:00
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: sch2hdl -intstyle ise -family spartan6 -verilog C:/.Xilinx/test/test7seg.vf -w C:/.Xilinx/test/test7seg.sch
+//Design Name: test7seg
+//Device: spartan6
+//Purpose:
+//    This verilog netlist is translated from an ECS schematic.It can be 
+//    synthesized and simulated, but it should not be modified. 
+//
+`timescale  100 ps / 10 ps
+
+module D4_16E_HXILINX_test7seg (D0, D1, D2, D3, D4, D5, D6, D7, D8, D9, D10, D11, D12, D13, D14, D15, A0, A1, A2, A3, E);
+    
+
+   output D0;
+   output D1;
+   output D2;
+   output D3;
+   output D4;
+   output D5;
+   output D6;
+   output D7;
+   output D8;
+   output D9;
+   output D10;
+   output D11;
+   output D12;
+   output D13;
+   output D14;
+   output D15;
+
+   input  A0;
+   input  A1;
+   input  A2;
+   input  A3;
+   input  E;
+  
+   reg D0;
+   reg D1;
+   reg D2;
+   reg D3;
+   reg D4;
+   reg D5;
+   reg D6;
+   reg D7;
+   reg D8;
+   reg D9;
+   reg D10;
+   reg D11;
+   reg D12;
+   reg D13;
+   reg D14;
+   reg D15;
+
+      always @ (A0 or A1 or A2 or A3 or E)
+      begin
+         if(!E)
+           {D15, D14, D13, D12, D11, D10, D9, D8, D7, D6, D5, D4, D3, D2, D1, D0} <= 16'b0000_0000_0000_0000;
+        else
+        begin
+           case({A3,A2,A1,A0})
+             4'b0000 :  {D15, D14, D13, D12, D11, D10, D9, D8, D7, D6, D5, D4, D3, D2, D1, D0} <= 16'b0000_0000_0000_0001;
+             4'b0001 :  {D15, D14, D13, D12, D11, D10, D9, D8, D7, D6, D5, D4, D3, D2, D1, D0} <= 16'b0000_0000_0000_0010;
+             4'b0010 :  {D15, D14, D13, D12, D11, D10, D9, D8, D7, D6, D5, D4, D3, D2, D1, D0} <= 16'b0000_0000_0000_0100;
+             4'b0011 :  {D15, D14, D13, D12, D11, D10, D9, D8, D7, D6, D5, D4, D3, D2, D1, D0} <= 16'b0000_0000_0000_1000;
+             4'b0100 :  {D15, D14, D13, D12, D11, D10, D9, D8, D7, D6, D5, D4, D3, D2, D1, D0} <= 16'b0000_0000_0001_0000;
+             4'b0101 :  {D15, D14, D13, D12, D11, D10, D9, D8, D7, D6, D5, D4, D3, D2, D1, D0} <= 16'b0000_0000_0010_0000;
+             4'b0110 :  {D15, D14, D13, D12, D11, D10, D9, D8, D7, D6, D5, D4, D3, D2, D1, D0} <= 16'b0000_0000_0100_0000;
+             4'b0111 :  {D15, D14, D13, D12, D11, D10, D9, D8, D7, D6, D5, D4, D3, D2, D1, D0} <= 16'b0000_0000_1000_0000;
+             4'b1000 :  {D15, D14, D13, D12, D11, D10, D9, D8, D7, D6, D5, D4, D3, D2, D1, D0} <= 16'b0000_0001_0000_0000;
+             4'b1001 :  {D15, D14, D13, D12, D11, D10, D9, D8, D7, D6, D5, D4, D3, D2, D1, D0} <= 16'b0000_0010_0000_0000;
+             4'b1010 :  {D15, D14, D13, D12, D11, D10, D9, D8, D7, D6, D5, D4, D3, D2, D1, D0} <= 16'b0000_0100_0000_0000;
+             4'b1011 :  {D15, D14, D13, D12, D11, D10, D9, D8, D7, D6, D5, D4, D3, D2, D1, D0} <= 16'b0000_1000_0000_0000;
+             4'b1100 :  {D15, D14, D13, D12, D11, D10, D9, D8, D7, D6, D5, D4, D3, D2, D1, D0} <= 16'b0001_0000_0000_0000;
+             4'b1101 :  {D15, D14, D13, D12, D11, D10, D9, D8, D7, D6, D5, D4, D3, D2, D1, D0} <= 16'b0010_0000_0000_0000;
+             4'b1110 :  {D15, D14, D13, D12, D11, D10, D9, D8, D7, D6, D5, D4, D3, D2, D1, D0} <= 16'b0100_0000_0000_0000;
+             4'b1111 :  {D15, D14, D13, D12, D11, D10, D9, D8, D7, D6, D5, D4, D3, D2, D1, D0} <= 16'b1000_0000_0000_0000;
+          endcase
+        end
+     end 
+
+endmodule
+`timescale  100 ps / 10 ps
+
+module OR6_HXILINX_test7seg (O, I0, I1, I2, I3, I4, I5);
+    
+
+   output O;
+
+   input I0;
+   input I1;
+   input I2;
+   input I3;
+   input I4;
+   input I5;
+
+assign O = (I0 || I1 || I2 || I3 || I4 || I5);
+
+endmodule
+`timescale 100 ps / 10 ps
+
+module FJKC_HXILINX_test7seg(Q, C, CLR, J, K);
+   
+   output             Q;
+
+   input 	      C;	
+   input 	      CLR;	
+   input              J;
+   input              K;
+   
+   parameter INIT = 1'b0;
+   reg                Q = INIT;
+
+
+   always @(posedge C or posedge CLR)
+     begin
+	if (CLR)
+	  Q <= 1'b0;
+	else
+        begin
+           if(!J)
+           begin
+              if(K)
+              Q <= 1'b0;
+           end
+           else
+           begin
+              if(!K)
+              Q <= 1'b1;
+              else 
+              Q <= !Q;
+           end
+        end
+     end
+   
+endmodule
+`timescale 1ns / 1ps
+
+module nub15_MUSER_test7seg(sw, 
+                            a, 
+                            b, 
+                            c);
+
+    input sw;
+   output a;
+   output b;
+   output c;
+   
+   wire XLXN_2;
+   wire XLXN_7;
+   wire XLXN_10;
+   wire XLXN_12;
+   wire XLXN_17;
+   wire XLXN_18;
+   wire a_DUMMY;
+   wire b_DUMMY;
+   wire c_DUMMY;
+   
+   assign a = a_DUMMY;
+   assign b = b_DUMMY;
+   assign c = c_DUMMY;
+   (* HU_SET = "XLXI_1_0" *) 
+   FJKC_HXILINX_test7seg  XLXI_1 (.C(sw), 
+                                 .CLR(XLXN_2), 
+                                 .J(XLXN_7), 
+                                 .K(a_DUMMY), 
+                                 .Q(c_DUMMY));
+   (* HU_SET = "XLXI_2_1" *) 
+   FJKC_HXILINX_test7seg  XLXI_2 (.C(sw), 
+                                 .CLR(XLXN_2), 
+                                 .J(XLXN_10), 
+                                 .K(a_DUMMY), 
+                                 .Q(b_DUMMY));
+   (* HU_SET = "XLXI_3_2" *) 
+   FJKC_HXILINX_test7seg  XLXI_3 (.C(sw), 
+                                 .CLR(XLXN_2), 
+                                 .J(XLXN_17), 
+                                 .K(XLXN_18), 
+                                 .Q(a_DUMMY));
+   AND2  XLXI_4 (.I0(a_DUMMY), 
+                .I1(b_DUMMY), 
+                .O(XLXN_7));
+   AND2  XLXI_5 (.I0(a_DUMMY), 
+                .I1(XLXN_12), 
+                .O(XLXN_10));
+   INV  XLXI_6 (.I(c_DUMMY), 
+               .O(XLXN_12));
+   VCC  XLXI_7 (.P(XLXN_17));
+   INV  XLXI_8 (.I(c_DUMMY), 
+               .O(XLXN_18));
+   GND  XLXI_9 (.G(XLXN_2));
+endmodule
+`timescale 1ns / 1ps
+
+module BCD27_MUSER_test7seg(Bit_0, 
+                            Bit_1, 
+                            Bit_2, 
+                            Bit_3, 
+                            A_7, 
+                            B_7, 
+                            C_7, 
+                            D_7, 
+                            E_7, 
+                            F_7, 
+                            G_7);
+
+    input Bit_0;
+    input Bit_1;
+    input Bit_2;
+    input Bit_3;
+   output A_7;
+   output B_7;
+   output C_7;
+   output D_7;
+   output E_7;
+   output F_7;
+   output G_7;
+   
+   wire A;
+   wire B;
+   wire C;
+   wire D0;
+   wire D1;
+   wire D2;
+   wire D3;
+   wire D4;
+   wire D5;
+   wire D6;
+   wire D7;
+   wire D8;
+   wire D9;
+   wire D10;
+   wire D11;
+   wire D12;
+   wire D13;
+   wire D14;
+   wire D15;
+   wire E;
+   wire F;
+   wire G;
+   wire XLXN_37;
+   wire XLXN_38;
+   
+   (* HU_SET = "XLXI_1_3" *) 
+   D4_16E_HXILINX_test7seg  XLXI_1 (.A0(Bit_0), 
+                                   .A1(Bit_1), 
+                                   .A2(Bit_2), 
+                                   .A3(Bit_3), 
+                                   .E(XLXN_37), 
+                                   .D0(D0), 
+                                   .D1(D1), 
+                                   .D2(D2), 
+                                   .D3(D3), 
+                                   .D4(D4), 
+                                   .D5(D5), 
+                                   .D6(D6), 
+                                   .D7(D7), 
+                                   .D8(D8), 
+                                   .D9(D9), 
+                                   .D10(D10), 
+                                   .D11(D11), 
+                                   .D12(D12), 
+                                   .D13(D13), 
+                                   .D14(D14), 
+                                   .D15(D15));
+   OR4  XLXI_25 (.I0(D12), 
+                .I1(D7), 
+                .I2(D1), 
+                .I3(D0), 
+                .O(G));
+   OR5  XLXI_26 (.I0(D13), 
+                .I1(D7), 
+                .I2(D3), 
+                .I3(D2), 
+                .I4(D1), 
+                .O(F));
+   (* HU_SET = "XLXI_27_4" *) 
+   OR6_HXILINX_test7seg  XLXI_27 (.I0(D9), 
+                                 .I1(D7), 
+                                 .I2(D5), 
+                                 .I3(D4), 
+                                 .I4(D3), 
+                                 .I5(D1), 
+                                 .O(E));
+   OR4  XLXI_31 (.I0(D11), 
+                .I1(D13), 
+                .I2(D4), 
+                .I3(D1), 
+                .O(A));
+   VCC  XLXI_32 (.P(XLXN_37));
+   INV  XLXI_33 (.I(G), 
+                .O(G_7));
+   INV  XLXI_34 (.I(F), 
+                .O(F_7));
+   INV  XLXI_35 (.I(E), 
+                .O(E_7));
+   INV  XLXI_36 (.I(XLXN_38), 
+                .O(D_7));
+   INV  XLXI_37 (.I(C), 
+                .O(C_7));
+   INV  XLXI_38 (.I(B), 
+                .O(B_7));
+   INV  XLXI_39 (.I(A), 
+                .O(A_7));
+   OR5  XLXI_40 (.I0(D15), 
+                .I1(D10), 
+                .I2(D7), 
+                .I3(D4), 
+                .I4(D1), 
+                .O(XLXN_38));
+   OR4  XLXI_41 (.I0(D15), 
+                .I1(D14), 
+                .I2(D12), 
+                .I3(D2), 
+                .O(C));
+   (* HU_SET = "XLXI_43_5" *) 
+   OR6_HXILINX_test7seg  XLXI_43 (.I0(D15), 
+                                 .I1(D14), 
+                                 .I2(D12), 
+                                 .I3(D11), 
+                                 .I4(D6), 
+                                 .I5(D5), 
+                                 .O(B));
+endmodule
+`timescale 1ns / 1ps
+
+module test7seg(sw, 
+                a, 
+                b, 
+                Buz, 
+                c, 
+                com0, 
+                com1, 
+                com2, 
+                com3, 
+                d, 
+                e, 
+                f, 
+                g);
+
+    input sw;
+   output a;
+   output b;
+   output Buz;
+   output c;
+   output com0;
+   output com1;
+   output com2;
+   output com3;
+   output d;
+   output e;
+   output f;
+   output g;
+   
+   wire XLXN_3;
+   wire XLXN_5;
+   wire XLXN_8;
+   wire XLXN_13;
+   wire XLXN_19;
+   wire XLXN_33;
+   wire XLXN_34;
+   
+   BCD27_MUSER_test7seg  XLXI_1 (.Bit_0(XLXN_5), 
+                                .Bit_1(XLXN_3), 
+                                .Bit_2(XLXN_8), 
+                                .Bit_3(), 
+                                .A_7(a), 
+                                .B_7(b), 
+                                .C_7(c), 
+                                .D_7(d), 
+                                .E_7(e), 
+                                .F_7(f), 
+                                .G_7(g));
+   OR3  XLXI_2 (.I0(XLXN_8), 
+               .I1(XLXN_3), 
+               .I2(XLXN_5), 
+               .O(XLXN_33));
+   AND2  XLXI_8 (.I0(XLXN_19), 
+                .I1(XLXN_34), 
+                .O(com0));
+   (* IOSTANDARD = "DEFAULT" *) (* SLEW = "SLOW" *) (* DRIVE = "12" *) 
+   OBUF  XLXI_13 (.I(XLXN_13), 
+                 .O(com1));
+   (* IOSTANDARD = "DEFAULT" *) (* SLEW = "SLOW" *) (* DRIVE = "12" *) 
+   OBUF  XLXI_14 (.I(XLXN_13), 
+                 .O(com2));
+   (* IOSTANDARD = "DEFAULT" *) (* SLEW = "SLOW" *) (* DRIVE = "12" *) 
+   OBUF  XLXI_15 (.I(XLXN_13), 
+                 .O(com3));
+   AND2  XLXI_17 (.I0(XLXN_5), 
+                 .I1(XLXN_8), 
+                 .O(Buz));
+   VCC  XLXI_18 (.P(XLXN_19));
+   INV  XLXI_21 (.I(XLXN_33), 
+                .O(XLXN_34));
+   nub15_MUSER_test7seg  XLXI_22 (.sw(sw), 
+                                 .a(XLXN_5), 
+                                 .b(XLXN_3), 
+                                 .c(XLXN_8));
+   GND  XLXI_23 (.G(XLXN_13));
+endmodule

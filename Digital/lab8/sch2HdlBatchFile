@@ -1,0 +1,5 @@
+sch2hdl,-intstyle,ise,-family,spartan6,-verilog,C:/.Xilinx/lab8/fullAdder.vf,-w,C:/.Xilinx/lab8/fullAdder.sch
+sch2hdl,-intstyle,ise,-family,spartan6,-verilog,C:/.Xilinx/lab8/Sum.vf,-w,C:/.Xilinx/lab8/Sum.sch
+sch2hdl,-intstyle,ise,-family,spartan6,-verilog,C:/.Xilinx/lab8/Lab8.vf,-w,C:/.Xilinx/lab8/Lab8.sch
+sch2hdl,-intstyle,ise,-family,spartan6,-verilog,C:/.Xilinx/lab8/Sum.vf,-w,C:/.Xilinx/lab8/Sum.sch
+sch2hdl,-intstyle,ise,-family,spartan6,-verilog,C:/.Xilinx/lab8/Lab8.vf,-w,C:/.Xilinx/lab8/Lab8.sch

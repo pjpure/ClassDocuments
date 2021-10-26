@@ -1,0 +1,15 @@
+add instance div2 576 768 R0 -sn=1
+BeginGroup
+add wire 960 736 992 736 -sn=1
+add instance div2 992 768 R0 -sn=1
+EndGroup
+BeginGroup
+add wire 1376 736 1408 736 -sn=1
+add instance div2 1408 768 R0 -sn=1
+EndGroup
+BeginGroup
+add wire 1792 736 1824 736 -sn=1
+add instance div2 1824 768 R0 -sn=1
+EndGroup
+select figure at 423 524 8 -branches -sn=1
+select all in 423 524 2492 1074 -branches -enclosed -sn=1

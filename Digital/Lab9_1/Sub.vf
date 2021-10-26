@@ -1,0 +1,73 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 14.7
+//  \   \         Application : sch2hdl
+//  /   /         Filename : Sub.vf
+// /___/   /\     Timestamp : 11/05/2020 01:08:45
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: sch2hdl -intstyle ise -family spartan6 -verilog C:/.Xilinx/Lab9_1/Sub.vf -w C:/.Xilinx/Lab9_1/Sub.sch
+//Design Name: Sub
+//Device: spartan6
+//Purpose:
+//    This verilog netlist is translated from an ECS schematic.It can be 
+//    synthesized and simulated, but it should not be modified. 
+//
+`timescale  100 ps / 10 ps
+
+module ADSU8_HXILINX_Sub (CO, OFL, S, A, ADD, B, CI);
+
+   
+   output             CO;
+   output             OFL;
+   output [7:0]       S;
+
+   input  [7:0]       A;
+   input  	      ADD;
+   input  [7:0]       B;
+   input              CI;
+
+   reg    [8:0]       adsu_tmp;  
+
+   always @ (A, ADD, B, CI) 
+   begin
+      if(ADD)
+         adsu_tmp = A + B + CI;
+      else
+         adsu_tmp = A - (!CI) - B;
+   end
+
+   assign S   =  adsu_tmp[7:0];
+   assign CO  =  ADD ? adsu_tmp[8] : ~adsu_tmp[8];
+   assign OFL =  ADD ? ( (A[7] & B[7] & (~S[7])) | ((~A[7]) & (~B[7]) & S[7]) ) : ( (A[7] & (~B[7]) & (~S[7])) | ((~A[7]) & B[7] & S[7]) );
+
+endmodule
+`timescale 1ns / 1ps
+
+module Sub(In1, 
+           In2, 
+           OutS);
+
+    input [7:0] In1;
+    input [7:0] In2;
+   output [7:0] OutS;
+   
+   wire XLXN_3;
+   wire XLXN_4;
+   
+   (* HU_SET = "XLXI_1_0" *) 
+   ADSU8_HXILINX_Sub  XLXI_1 (.A(In1[7:0]), 
+                             .ADD(XLXN_4), 
+                             .B(In2[7:0]), 
+                             .CI(XLXN_3), 
+                             .CO(), 
+                             .OFL(), 
+                             .S(OutS[7:0]));
+   GND  XLXI_3 (.G(XLXN_4));
+   VCC  XLXI_4 (.P(XLXN_3));
+endmodule

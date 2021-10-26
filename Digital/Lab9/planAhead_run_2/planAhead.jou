@@ -1,0 +1,101 @@
+#-----------------------------------------------------------
+# PlanAhead v14.7 (64-bit)
+# Build 321239 by xbuild on Fri Sep 27 19:29:51 MDT 2013
+# Start of session at: Wed Nov 04 19:50:52 2020
+# Process ID: 9664
+# Log file: C:/.Xilinx/Lab9/planAhead_run_2/planAhead.log
+# Journal file: C:/.Xilinx/Lab9/planAhead_run_2/planAhead.jou
+#-----------------------------------------------------------
+start_gui
+source C:/.Xilinx/Lab9/pa.fromHdl.tcl
+update_compile_order -fileset sim_1
+set_property package_pin "" [get_ports [list  {DP[4]}]]
+startgroup
+set_property package_pin P99 [get_ports {DP[8]}]
+endgroup
+startgroup
+set_property package_pin P100 [get_ports {DP[7]}]
+endgroup
+startgroup
+set_property package_pin P101 [get_ports {DP[6]}]
+endgroup
+startgroup
+set_property package_pin P102 [get_ports {DP[5]}]
+endgroup
+startgroup
+set_property package_pin P104 [get_ports {DP[4]}]
+endgroup
+startgroup
+set_property package_pin P105 [get_ports {DP[3]}]
+endgroup
+startgroup
+set_property package_pin P111 [get_ports {DP[2]}]
+endgroup
+startgroup
+set_property package_pin P112 [get_ports {DP[1]}]
+endgroup
+startgroup
+set_property package_pin P111 [get_ports {DP[2]}]
+endgroup
+startgroup
+set_property package_pin P66 [get_ports {SW[0]}]
+endgroup
+startgroup
+set_property package_pin P62 [get_ports {SW[1]}]
+endgroup
+startgroup
+set_property package_pin P61 [get_ports {SW[2]}]
+endgroup
+startgroup
+set_property package_pin P59 [get_ports {SW[3]}]
+endgroup
+startgroup
+set_property package_pin P58 [get_ports {SW[4]}]
+endgroup
+startgroup
+set_property package_pin P57 [get_ports {SW[5]}]
+endgroup
+startgroup
+set_property package_pin P56 [get_ports {SW[6]}]
+endgroup
+startgroup
+set_property package_pin P55 [get_ports {SW[7]}]
+endgroup
+startgroup
+set_property package_pin P41 [get_ports a]
+endgroup
+startgroup
+set_property package_pin P40 [get_ports b]
+endgroup
+startgroup
+set_property package_pin P35 [get_ports c]
+endgroup
+startgroup
+set_property package_pin P123 [get_ports clock]
+endgroup
+set_property package_pin "" [get_ports [list  com1]]
+startgroup
+set_property package_pin P44 [get_ports com0]
+endgroup
+startgroup
+set_property package_pin P43 [get_ports com1]
+endgroup
+startgroup
+set_property package_pin P33 [get_ports com2]
+endgroup
+startgroup
+set_property package_pin P30 [get_ports com3]
+endgroup
+startgroup
+set_property package_pin P34 [get_ports d]
+endgroup
+startgroup
+set_property package_pin P32 [get_ports e]
+endgroup
+startgroup
+set_property package_pin P29 [get_ports f]
+endgroup
+startgroup
+set_property package_pin P27 [get_ports g]
+endgroup
+save_constraints

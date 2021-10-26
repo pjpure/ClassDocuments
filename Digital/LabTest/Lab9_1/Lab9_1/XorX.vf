@@ -1,0 +1,56 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 14.7
+//  \   \         Application : sch2hdl
+//  /   /         Filename : XorX.vf
+// /___/   /\     Timestamp : 11/04/2020 23:33:51
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: sch2hdl -intstyle ise -family spartan6 -verilog C:/.Xilinx/Lab9_1/XorX.vf -w C:/.Xilinx/Lab9_1/XorX.sch
+//Design Name: XorX
+//Device: spartan6
+//Purpose:
+//    This verilog netlist is translated from an ECS schematic.It can be 
+//    synthesized and simulated, but it should not be modified. 
+//
+`timescale 1ns / 1ps
+
+module XorX(In1, 
+            In2, 
+            OutX);
+
+    input [7:0] In1;
+    input [7:0] In2;
+   output [7:0] OutX;
+   
+   
+   XOR2  XLXI_1 (.I0(In2[0]), 
+                .I1(In1[0]), 
+                .O(OutX[0]));
+   XOR2  XLXI_2 (.I0(In2[1]), 
+                .I1(In1[1]), 
+                .O(OutX[1]));
+   XOR2  XLXI_3 (.I0(In2[2]), 
+                .I1(In1[2]), 
+                .O(OutX[2]));
+   XOR2  XLXI_4 (.I0(In2[3]), 
+                .I1(In1[3]), 
+                .O(OutX[3]));
+   XOR2  XLXI_5 (.I0(In2[4]), 
+                .I1(In1[4]), 
+                .O(OutX[4]));
+   XOR2  XLXI_6 (.I0(In2[5]), 
+                .I1(In1[5]), 
+                .O(OutX[5]));
+   XOR2  XLXI_7 (.I0(In2[6]), 
+                .I1(In1[6]), 
+                .O(OutX[6]));
+   XOR2  XLXI_8 (.I0(In2[7]), 
+                .I1(In1[7]), 
+                .O(OutX[7]));
+endmodule

@@ -1,0 +1,54 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 14.7
+//  \   \         Application : sch2hdl
+//  /   /         Filename : fullAdder.vf
+// /___/   /\     Timestamp : 11/04/2020 15:47:40
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: sch2hdl -intstyle ise -family spartan6 -verilog C:/.Xilinx/lab8/fullAdder.vf -w C:/.Xilinx/lab8/fullAdder.sch
+//Design Name: fullAdder
+//Device: spartan6
+//Purpose:
+//    This verilog netlist is translated from an ECS schematic.It can be 
+//    synthesized and simulated, but it should not be modified. 
+//
+`timescale 1ns / 1ps
+
+module fullAdder(A, 
+                 B, 
+                 C, 
+                 Carray, 
+                 SUM);
+
+    input A;
+    input B;
+    input C;
+   output Carray;
+   output SUM;
+   
+   wire XLXN_6;
+   wire XLXN_7;
+   wire XLXN_8;
+   
+   XOR2  XLXI_1 (.I0(B), 
+                .I1(A), 
+                .O(XLXN_6));
+   XOR2  XLXI_2 (.I0(C), 
+                .I1(XLXN_6), 
+                .O(SUM));
+   AND2  XLXI_3 (.I0(XLXN_6), 
+                .I1(C), 
+                .O(XLXN_7));
+   AND2  XLXI_4 (.I0(B), 
+                .I1(A), 
+                .O(XLXN_8));
+   OR2  XLXI_6 (.I0(XLXN_8), 
+               .I1(XLXN_7), 
+               .O(Carray));
+endmodule

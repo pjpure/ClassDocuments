@@ -1,0 +1,2 @@
+vhdtdtfi -lib work muxSEL.vhd -prj test -o MuxSEL37.spl -module MuxSEL37 -template C:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan6 MuxSEL37.spl C:/.Xilinx/test/MuxSEL37.sym 

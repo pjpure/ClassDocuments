@@ -1,0 +1,7 @@
+verilog work "div2.vf"
+verilog work "Mux8_4.vf"
+verilog work "DIV.vf"
+verilog work "counter0099.vf"
+verilog work "compare.vf"
+verilog work "bcdto7segment.vf"
+verilog work "Lab6.vf"

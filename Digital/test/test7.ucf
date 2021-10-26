@@ -1,0 +1,147 @@
+NET "a" LOC = P23;
+NET "clock" LOC = P123;
+NET "b" LOC = P16;
+NET "c" LOC = P7;
+NET "sw1" LOC = P66;
+NET "d" LOC = P11;
+NET "e" LOC = P14;
+NET "f" LOC = P21;
+NET "g" LOC = P5;
+NET "Com[0]" LOC = P24;
+NET "Com[1]" LOC = P22;
+NET "Com[2]" LOC = P17;
+NET "Com[3]" LOC = P15;
+NET "Com[4]" LOC = P12;
+NET "Com[5]" LOC = P10;
+NET "Com[6]" LOC = P8;
+NET "Com[7]" LOC = P6;
+NET "Com[8]" LOC = P1;
+NET "Com[9]" LOC = P142;
+NET "Com[10]" LOC = P140;
+NET "Com[11]" LOC = P138;
+NET "Com[12]" LOC = P134;
+NET "Com[13]" LOC = P132;
+NET "Com[14]" LOC = P127;
+NET "Com[15]" LOC = P124;
+NET "Com[16]" LOC = P2;
+NET "Com[17]" LOC = P143;
+NET "Com[18]" LOC = P141;
+NET "Com[19]" LOC = P139;
+NET "Com[20]" LOC = P137;
+NET "Com[21]" LOC = P133;
+NET "Com[22]" LOC = P131;
+NET "Com[23]" LOC = P126;
+NET "Com[24]" LOC = P121;
+NET "Com[25]" LOC = P120;
+NET "Com[26]" LOC = P119;
+NET "Com[27]" LOC = P118;
+NET "Com[28]" LOC = P117;
+NET "Com[29]" LOC = P116;
+NET "Com[30]" LOC = P115;
+NET "Com[31]" LOC = P114;
+NET "Com[32]" LOC = P112;
+NET "Com[33]" LOC = P111;
+NET "Com[34]" LOC = P105;
+NET "Com[35]" LOC = P104;
+NET "Com[36]" LOC = P102;
+NET "Com[37]" LOC = P101;
+NET "Com[38]" LOC = P100;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
