@@ -1,0 +1,104 @@
+---
+title: "Linear Regresstion"
+output: html_notebook
+---
+```{r}
+library(tidyverse)
+library(broom)
+library(psych)
+library(modelr)
+library(ggfortify)
+setwd("~/CE2D-2/git/Propstat")
+
+df <- read.csv("imdbm.csv")
+
+income <- df$income
+avg_vote <- df$avg_vote
+
+```
+
+```{r}
+describe(df)
+
+```
+
+```{r}
+df %>% ggplot(aes(x=avg_vote,y=income))+geom_point()+stat_smooth(method = 'lm',se=FALSE)
+```
+
+```{r}
+model <- lm(income ~ avg_vote,data = df)
+model
+```
+
+```{r}
+summary(model)
+```
+
+```{r}
+tidy(model)
+```
+
+```{r}
+mse(model,df)
+```
+```{r}
+sum(model$residuals ** 2)/length(avg_vote)
+```
+```{r}
+x=avg_vote
+y=income
+
+
+```
+
+
+
+
+```{r}
+plot(x,y, xlab = "Driving", ylab = "Premium")
+```
+
+```{r}
+xbar <- mean(x)
+ybar <- mean (y)
+n <- length(y)
+
+data.frame (xi=x,yi=y, xiyi=x*y, x.squared=x^2, y.squared=y^2, 
+            x_c=x-xbar, y_c=y-ybar, x_cy_c=(x-xbar)*(y-ybar))
+```
+```{r}
+SSxy <- sum(x*y) - n*xbar*ybar; SSxy
+```
+```{r}
+sum((x-xbar)*(y-ybar))
+```
+```{r}
+SSxx <- sum (x^2) - n*xbar^2;SSxx
+```
+```{r}
+sum((x-xbar)^2)
+```
+```{r}
+SSyy <- sum(y^2) - n*ybar^2;SSyy
+```
+
+
+```{r}
+sum((y-ybar)^2)
+```
+
+
+```{r}
+r <- SSxy/(sqrt(SSxx)*sqrt(SSyy));r
+```
+
+
+```{r}
+cor(x,y)
+```
+
+
+
+
+

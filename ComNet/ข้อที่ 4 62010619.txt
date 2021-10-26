@@ -1,0 +1,5 @@
+1.tcp.flags.syn == 1 && tcp.seq == 0 && !http && tcp.flags.fin == 0
+
+2.tcp.flags.ack == 1&& tcp.seq <= 1 && tcp.ack == 1 && !http && tcp.flags.fin==0
+
+3.tcp.ack <= 1&&tcp.seq<=1 && !(tcp.flags.ack==1&&tcp.flags.syn==1) && !http && tcp.flags.fin == 0
